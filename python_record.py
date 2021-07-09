@@ -12,13 +12,15 @@ import subprocess
 
 COMPILER_COMMAND = 'python' # replace with whatever usually used in the commandline ex. python3
 
-def add_commit(id):
+def add_commit(id, push = False):
     """
     Add current changes and commit
     """
     repo = Repo(os.getcwd())
     repo.git.add('.')
     repo.git.commit('-m', id)
+    if push:
+        repo.remotes.origin.push()
 
 if __name__ == '__main__':
     id = str(time.time())
@@ -31,5 +33,5 @@ if __name__ == '__main__':
         record = '{} , {} , error_code: {} \n'.format(sys.argv[1], id, process.returncode)
         f.write(record)
 
-    add_commit(id + '_end')
+    add_commit(id + '_end', push=True)
     
