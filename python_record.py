@@ -18,7 +18,7 @@ def add_commit(id):
     """
     repo = Repo(os.getcwd())
     repo.git.add('.')
-    repo.git.commit(id)
+    repo.git.commit('-m', id)
 
 if __name__ == '__main__':
     id = str(time.time())
