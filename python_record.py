@@ -28,7 +28,8 @@ if __name__ == '__main__':
 
     process = subprocess.run(command)
     with open('./runs.txt', 'a') as f:
-        f.write(id + ', error_code: ' + str(process.returncode))
+        record = '{} , {} , error_code \n'.format(sys.argv[1], id, process.returncode)
+        f.write(record)
 
     add_commit(id + '_end')
     
