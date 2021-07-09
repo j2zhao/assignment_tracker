@@ -24,7 +24,7 @@ if __name__ == '__main__':
     id = str(time.time())
     add_commit(id + '_start')
     
-    command = COMPILER_COMMAND + sys.argv[1:]
+    command = [COMPILER_COMMAND] + sys.argv[1:]
 
     process = subprocess.run(command)
     with open('./runs.txt', 'a') as f:
