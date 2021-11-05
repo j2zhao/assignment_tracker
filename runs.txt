@@ -23,3 +23,4 @@ test_record.py , False, 1636133088.354048 , error_code: 0
 test_record.py , True, 1636133118.882568 , error_code: 0 
 test_record.py , True, 1636133166.382358 , error_code: 0 
 test_record.py , False, 1636133170.2791622 , error_code: 0 
+test_record.py , False, 1636135951.5257084 , error_code: 1 
