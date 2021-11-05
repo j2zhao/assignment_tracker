@@ -1,4 +1,5 @@
 import numpy
+import time
 
-print('hello')
-raise ValueError()
+
+time.sleep(1)
