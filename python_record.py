@@ -17,8 +17,8 @@ def check_diff(repo):
     
     diffs = hcommit.diff(None)
 
-    for diff_added in diffs.iter_change_type('M'):
-        print(diff_added)
+    # for diff_added in diffs.iter_change_type('M'):
+    #     print(diff_added)
 
     if len(diffs) == 0:
         return False
@@ -33,7 +33,7 @@ def add_commit(id, push = True):
     # need to check if anything in repo has changed
     repo = Repo(os.getcwd())
     changed = check_diff(repo) 
-    
+    print(changed)
     if changed:
         repo.git.add('.')
         repo.git.commit('-m', id)
