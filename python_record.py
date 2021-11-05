@@ -20,7 +20,7 @@ def add_commit(id, push = True):
     repo = Repo(os.getcwd())
     hcommit = repo.head.commit
     
-    print(hcommit.diff(None))
+    print(hcommit.diff(None)[0].score)
 
 
     repo.git.add('.')
