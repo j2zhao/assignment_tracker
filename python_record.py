@@ -12,7 +12,7 @@ import subprocess
 
 COMPILER_COMMAND = 'python' # replace with whatever usually used in the commandline ex. python3
 
-def add_commit(id, push = False):
+def add_commit(id, push = True):
     """
     Add current changes and commit
     """
