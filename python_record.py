@@ -32,10 +32,13 @@ def add_commit(id, check_changed = True, push = True):
     """
     # need to check if anything in repo has changed
     repo = Repo(os.getcwd())
+    
     if check_changed:
         changed = check_diff(repo)
     else:
         changed = True
+    
+    print(changed)
     
     if changed:
         repo.git.add('.')
