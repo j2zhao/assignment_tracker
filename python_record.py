@@ -19,7 +19,8 @@ def add_commit(id, push = True):
     # need to check if anything in repo has changed
     repo = Repo(os.getcwd())
     hcommit = repo.head.commit
-    print(hcommit.diff())
+    
+    print(hcommit.diff(None))
 
 
     repo.git.add('.')
