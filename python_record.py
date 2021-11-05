@@ -16,6 +16,7 @@ def add_commit(id, push = False):
     """
     Add current changes and commit
     """
+    # need to check if anything in repo has changed
     repo = Repo(os.getcwd())
     repo.git.add('.')
     repo.git.commit('-m', id)
