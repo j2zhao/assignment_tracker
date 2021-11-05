@@ -36,10 +36,7 @@ def add_commit(id, check_changed = True, push = True):
     if check_changed:
         changed = check_diff(repo)
     else:
-        changed = True
-    
-    print(changed)
-    
+        changed = True    
     if changed:
         repo.git.add('.')
         repo.git.commit('-m', id)
