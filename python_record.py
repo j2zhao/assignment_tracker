@@ -22,7 +22,6 @@ def add_commit(id, push = True):
     
     print(hcommit.diff(None)[0].diff)
 
-
     repo.git.add('.')
     repo.git.commit('-m', id)
     if push:
