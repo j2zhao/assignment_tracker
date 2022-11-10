@@ -48,17 +48,17 @@ class AutoCommit(Magics):
 
     @cell_magic
     def git_commit(self, line, cell):
-        self.shell.run_cell(cell)
+        #()
         # print("Full access to the main IPython object:", self.shell)
         # print(type(self.shell))
         # print()
         # for key in list(self.shell.user_ns.keys()):
         #     print(key)
         #     print(self.shell.user_ns[key])
-        # self.shell.run_cell(cell)
-        # id = str(time.time())
-        with open('./runs.txt', 'a') as f:
-            f.write('new run \n')
+        self.shell.run_cell(cell)
+        id = str(time.time())
+        with open('./runs_2.txt', 'a') as f:
+            f.write('new run: {} \n'.format(id,))
             f.write(cell)
         # #committed = add_commit(id + '_start', push = False)
         add_commit(id + '_end', check_changed = True, push=True)
