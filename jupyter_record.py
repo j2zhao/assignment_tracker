@@ -48,13 +48,20 @@ class AutoCommit(Magics):
 
     @cell_magic
     def git_commit(self, line, cell):
-        #with capture_output(True, False, True) as io:
         self.shell.run_cell(cell)
-        id = str(time.time())
-        #committed = add_commit(id + '_start', push = False)
+        # print("Full access to the main IPython object:", self.shell)
+        # print(type(self.shell))
+        # print()
+        # for key in list(self.shell.user_ns.keys()):
+        #     print(key)
+        #     print(self.shell.user_ns[key])
+        # self.shell.run_cell(cell)
+        # id = str(time.time())
+        with open('./runs.txt', 'a') as f:
+            f.write('new run \n')
+            f.write(cell)
+        # #committed = add_commit(id + '_start', push = False)
         add_commit(id + '_end', check_changed = True, push=True)
-        # Make a beep here somehow ?
-        #io.show()
 
 def load_ipython_extension(ipython):
     """
