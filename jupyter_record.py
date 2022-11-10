@@ -7,7 +7,9 @@ import time
 import sys
 import subprocess
 
-COMPILER_COMMAND = 'python' # replace with whatever usually used in the commandline ex. python3
+#COMPILER_COMMAND = 'python' # replace with whatever usually used in the commandline ex. python3
+
+MAX_SIZE = 20000000
 
 def check_diff(repo):
     hcommit = repo.head.commit
@@ -45,6 +47,32 @@ def add_commit(id, check_changed = True, push = True):
 
 @magics_class
 class AutoCommit(Magics):
+    index = None
+
+    def update_record(self, cell, id, result):
+        file_dire = self.update_index()
+        with open(file_dire, 'a') as f:
+            f.write('new run: {} \n'.format(id,))
+            f.write('format error: {} \n'.format(result.error_before_exec))
+            f.write('execution error: {} \n'.format(result.error_in_exec))
+            f.write(cell)
+    
+    def update_index(self, dire = './code_history'):
+        if self.index == None:
+            index_dire = os.path.join(dire, 'current_index.txt')
+            with open(index_dire, 'r') as f:
+                self.index = int(f.readline())
+        else:
+            file_dire = os.path.join(dire, 'runs_{}.txt'.format(self.index))
+            fsize = os.path.getsize(file_dire)
+            if fsize >= MAX_SIZE:
+                self.index += 1
+                index_dire = os.path.join(dire, 'current_index.txt')
+                with open(index_dire, 'w') as f:
+                    f.write(str(self.index))
+
+        file_dire = os.path.join(dire, 'runs_{}.txt'.format(self.index))
+        return file_dire
 
     @cell_magic
     def git_commit(self, line, cell):
@@ -55,13 +83,12 @@ class AutoCommit(Magics):
         # for key in list(self.shell.user_ns.keys()):
         #     print(key)
         #     print(self.shell.user_ns[key])
-        self.shell.run_cell(cell)
+        result = self.shell.run_cell(cell)
         id = str(time.time())
-        with open('./runs_2.txt', 'a') as f:
-            f.write('new run: {} \n'.format(id,))
-            f.write(cell)
+        self.update_record(cell, id, result)
+        #self.update_id()
         # #committed = add_commit(id + '_start', push = False)
-        add_commit(id + '_end', check_changed = True, push=True)
+        add_commit(id + '_end', push=True)
 
 def load_ipython_extension(ipython):
     """
