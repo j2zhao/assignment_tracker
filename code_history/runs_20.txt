@@ -1,0 +1,7 @@
+new run: 1668195723.900529 
+format error: None 
+execution error: name 'df' is not defined 
+
+for key in dataset.keys():
+    print(key)
+    print(df[key].isnull().sum())
