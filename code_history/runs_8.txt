@@ -1,0 +1,6 @@
+new run: 1668195271.466227 
+format error: None 
+execution error: "['DepTime', 'DepDelay', 'ArrTime', 'ArrDelayMinutes', 'AirTime', 'ActualElapsedTime', 'DepDel15', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrDel15', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandingss'] not found in axis" 
+
+
+dataset = dataset.drop(dropped_column)
