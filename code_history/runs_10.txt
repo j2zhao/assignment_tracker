@@ -1,0 +1,7 @@
+new run: 1668195339.422996 
+format error: None 
+execution error: "['DivAirportLandingss'] not found in axis" 
+
+for column in dropped_column:
+    dataset = dataset.drop(column, axis = 1)
+    
