@@ -1,0 +1,6 @@
+new run: 1668195263.0603242 
+format error: None 
+execution error: name 'dropped_columns' is not defined 
+
+
+dataset = dataset.drop(dropped_columns)
