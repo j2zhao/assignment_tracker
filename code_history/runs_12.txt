@@ -2,3 +2,10 @@ new run: 1668195365.2284071
 format error: None 
 execution error: None 
 dataset
+new run: 1668195375.545779 
+format error: None 
+execution error: "['DepTime'] not found in axis" 
+
+for column in dropped_column:
+    dataset = dataset.drop(column, axis = 1)
+    
