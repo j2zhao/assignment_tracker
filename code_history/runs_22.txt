@@ -2,3 +2,7 @@ new run: 1668195752.041211
 format error: None 
 execution error: None 
 dataset.shape
+new run: 1668195879.264276 
+format error: None 
+execution error: None 
+df = dataset.dropna()
