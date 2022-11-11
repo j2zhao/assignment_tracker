@@ -1,0 +1,7 @@
+new run: 1668195418.7094479 
+format error: None 
+execution error: None 
+
+for column in dropped_column:
+    dataset = dataset.drop(column, axis = 1)
+    
