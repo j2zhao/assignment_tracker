@@ -1,0 +1,6 @@
+new run: 1668194039.947237 
+format error: None 
+execution error: name 'pandas' is not defined 
+
+pandas.read_csv('../archive/Combined_Flights_2018.csv')
+
