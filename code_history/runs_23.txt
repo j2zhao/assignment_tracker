@@ -2,3 +2,9 @@ new run: 1668195885.2562602
 format error: None 
 execution error: None 
 df
+new run: 1668439827.477226 
+format error: None 
+execution error: name 'pd' is not defined 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv')
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv')
