@@ -1,0 +1,7 @@
+new run: 1668459002.880054 
+format error: None 
+execution error: "['Flight_Number_Marketing_Airline'] not found in axis" 
+
+for column in dropped_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
