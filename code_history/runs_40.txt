@@ -3,3 +3,7 @@ format error: None
 execution error: None 
 
 testing
+new run: 1668466566.0390139 
+format error: None 
+execution error: None 
+training
