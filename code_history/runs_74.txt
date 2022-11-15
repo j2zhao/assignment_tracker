@@ -1,0 +1,10 @@
+new run: 1668530320.949446 
+format error: None 
+execution error: None 
+
+not_hot = []
+for key in training.keys():
+    if key not in one_hot:
+        not_hot.append(key)
+        
+print(not_hot)
