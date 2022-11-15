@@ -3,3 +3,9 @@ format error: None
 execution error: None 
 
 X = hstack(array)
+new run: 1668553184.904861 
+format error: None 
+execution error: None 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
