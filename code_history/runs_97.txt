@@ -1,0 +1,12 @@
+new run: 1668555487.2070699 
+format error: None 
+execution error: name 'y_out' is not defined 
+
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+matrix = confusion_matrix(y_test, y_out)
+display = ConfusionMatrixDisplay(matrix)
+disp.plot()
+plt.show()
