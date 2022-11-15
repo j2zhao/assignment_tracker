@@ -1,0 +1,10 @@
+new run: 1668529859.904881 
+format error: invalid syntax (<ipython-input-76-ffad96bfe9ef>, line 5) 
+execution error: None 
+
+encode = OneHotEncoder()
+
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot]..reshape(-1, 1))
+    x.shape
