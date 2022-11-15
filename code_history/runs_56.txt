@@ -1,0 +1,7 @@
+new run: 1668520243.3007638 
+format error: None 
+execution error: None 
+
+for col in training:
+    print(col)
+    print(training[col].unique())
