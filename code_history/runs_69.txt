@@ -1,0 +1,10 @@
+new run: 1668529998.802273 
+format error: None 
+execution error: None 
+
+encode = OneHotEncoder()
+
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot].to_numpy().reshape(-1, 1))
+    print(x.shape)
