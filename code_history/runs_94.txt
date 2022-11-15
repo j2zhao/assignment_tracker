@@ -1,0 +1,6 @@
+new run: 1668553402.04278 
+format error: None 
+execution error: None 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
