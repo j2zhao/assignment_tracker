@@ -1,0 +1,10 @@
+new run: 1668529865.750931 
+format error: None 
+execution error: 'Series' object has no attribute 'reshape' 
+
+encode = OneHotEncoder()
+
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot].reshape(-1, 1))
+    x.shape
