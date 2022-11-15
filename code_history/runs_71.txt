@@ -1,0 +1,14 @@
+new run: 1668530143.886376 
+format error: None 
+execution error: Found unknown categories [30409, 34004, 34120] in column 0 during transform 
+
+encode = OneHotEncoder()
+
+array = []
+array_test = []
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot].to_numpy().reshape(-1, 1))
+    y = encode.transform(testing[hot].to_numpy().reshape(-1, 1))
+    array.append(x)
+    array.append(y)
