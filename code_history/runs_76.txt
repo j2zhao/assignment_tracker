@@ -4,3 +4,10 @@ execution error: None
 
 print(len(array))
 
+new run: 1668530528.1171148 
+format error: None 
+execution error: None 
+
+
+print(array[0].shape)
+
