@@ -1,0 +1,7 @@
+new run: 1668529328.735583 
+format error: None 
+execution error: None 
+
+encode = OneHotEncoder()
+
+x = encode.fit_transform(training)
