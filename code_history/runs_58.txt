@@ -1,0 +1,4 @@
+new run: 1668520261.9682162 
+format error: None 
+execution error: None 
+testing['CRSDepTime'] = testing['CRSDepTime']//10
