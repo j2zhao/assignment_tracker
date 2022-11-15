@@ -1,0 +1,12 @@
+new run: 1668529840.437496 
+format error: None 
+execution error: Expected 2D array, got 1D array instead:
+array=[34 34 34 ... 41 22 41].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample. 
+
+encode = OneHotEncoder()
+
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot])
+    x.shape
