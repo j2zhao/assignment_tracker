@@ -1,0 +1,6 @@
+new run: 1668553486.7981389 
+format error: None 
+execution error: None 
+
+y_train = training['DepDel15'].to_numpy().reshape(-1, 1)
+y_test = testing['DepDel15'].to_numpy().reshape(-1, 1)
