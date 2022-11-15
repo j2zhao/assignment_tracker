@@ -1,0 +1,6 @@
+new run: 1668556385.559571 
+format error: None 
+execution error: None 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv')
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv')
