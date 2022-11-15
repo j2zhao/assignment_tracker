@@ -1,0 +1,7 @@
+new run: 1668530577.347959 
+format error: None 
+execution error: None 
+
+for i in range(len(array)):
+    print(array[0].shape)
+
