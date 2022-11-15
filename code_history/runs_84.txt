@@ -1,0 +1,5 @@
+new run: 1668530760.470191 
+format error: None 
+execution error: zero-dimensional arrays cannot be concatenated 
+
+x = np.concatenate([array[0], array[1]])
