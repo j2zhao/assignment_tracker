@@ -1,0 +1,7 @@
+new run: 1668530850.821185 
+format error: None 
+execution error: None 
+
+for i in range(len(array)):
+    print(array[0])
+
