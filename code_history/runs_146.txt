@@ -3206,3 +3206,22 @@ new run: 1668627750.999111
 format error: None 
 execution error: None 
 plt.hist(y_out, bins=100)
+new run: 1668627827.080462 
+format error: None 
+execution error: None 
+
+from sklearn.preprocessing import OneHotEncoder
+
+encode = OneHotEncoder(handle_unknown = 'ignore')
+
+one_hot = ['DestWac', 'DestStateFips', 'DestCityMarketID', 'DestAirportID', 'OriginWac', 'OriginStateFips', 'OriginCityMarketID', 'OriginAirportID', 'Operating_Airline', 'DayOfWeek', 'Month', 'Quarter', 'Dest', 'Origin', 'Airline' ]
+
+array = []
+array_test = []
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot].to_numpy().reshape(-1, 1))
+    y = encode.transform(testing[hot].to_numpy().reshape(-1, 1))
+    print(x.shape)
+    array.append(x)
+    array_test.append(y)
