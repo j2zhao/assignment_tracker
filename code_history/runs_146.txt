@@ -109,3 +109,10 @@ for key in training.keys():
         not_hot.append(key)
         
 print(not_hot)
+new run: 1668568608.079515 
+format error: None 
+execution error: None 
+
+for i in range(len(array)):
+    print(array[i].shape)
+
