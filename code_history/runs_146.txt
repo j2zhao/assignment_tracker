@@ -1211,3 +1211,9 @@ execution error: 'coo_matrix' object is not subscriptable
 idx = np.random.choice(np.arange(len(y_train)), 10000, replace=False)
 x_sample = X_train[idx]
 y_sample = y_train[idx]
+new run: 1668578745.6162329 
+format error: None 
+execution error:  
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
