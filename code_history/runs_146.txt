@@ -3147,3 +3147,15 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668627671.062628 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import explained_variance_score
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import accuracy_score, ConfusionMatrixDisplay, confusion_matrix
+import matplotlib.pyplot as plt
