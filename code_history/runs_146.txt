@@ -1833,3 +1833,18 @@ format error: None
 execution error: None 
 
 from scipy.sparse import hstack
+new run: 1668579659.876159 
+format error: None 
+execution error: None 
+
+
+col_2 = ['CRSDepTime', 'DepTime', 'DepDelayMinutes', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDel15']
+
+#col_2 = ['CRSDepTime', 'DepTime', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDelayMinutes']
+
+for col in col_2:
+    x = training[col].to_numpy().reshape(-1, 1)
+    y = testing[col].to_numpy().reshape(-1, 1)
+    array.append(x)
+    array_test.append(y)
+    
