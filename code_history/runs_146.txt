@@ -1042,3 +1042,7 @@ model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
 model.fit(X_train, y_train)
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668577052.2288551 
+format error: None 
+execution error: name 'y_out' is not defined 
+print(np.sum(y_out))
