@@ -1901,3 +1901,9 @@ execution error: None
 
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668579737.1110442 
+format error: None 
+execution error: None 
+
+X_train = training['DepDelayMinutes'].to_numpy().reshape(-1, 1)
+y_train = testing['DepDelayMinutes'].to_numpy().reshape(-1, 1)
