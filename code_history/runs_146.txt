@@ -3111,3 +3111,9 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668627633.694583 
+format error: None 
+execution error: None 
+
+y_out = model.predict(X_test)
+print(explained_variance_score(y_test, y_out))
