@@ -1161,3 +1161,12 @@ format error: None
 execution error: None 
 import matplotlib.pyplot as plt
 plt.hist(y_test, bins=9)
+new run: 1668578229.594235 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import explained_variance_score
+
