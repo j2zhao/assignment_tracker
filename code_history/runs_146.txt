@@ -10,3 +10,9 @@ execution error: None
 
 import pandas as pd
 import numpy as np
+new run: 1668568284.424339 
+format error: None 
+execution error: None 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv')
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv')
