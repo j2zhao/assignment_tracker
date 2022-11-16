@@ -1140,3 +1140,8 @@ new run: 1668577727.876244
 format error: None 
 execution error: name 'y_out' is not defined 
 print(np.sum(y_out))
+new run: 1668578031.624921 
+format error: None 
+execution error: None 
+import matplotlib.pyplot as plt
+plt.hist(y_test, bins=9)
