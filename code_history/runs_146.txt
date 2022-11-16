@@ -338,3 +338,13 @@ for hot in one_hot:
     print(x.shape)
     array.append(x)
     array_test.append(y)
+new run: 1668570825.1325471 
+format error: None 
+execution error: None 
+
+not_hot = []
+for key in training.keys():
+    if key not in one_hot:
+        not_hot.append(key)
+        
+print(not_hot)
