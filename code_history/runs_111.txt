@@ -1,0 +1,5 @@
+new run: 1668558759.760749 
+format error: None 
+execution error: None 
+
+training['CRSDepTime'] = training['CRSDepTime']//10
