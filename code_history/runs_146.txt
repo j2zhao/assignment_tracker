@@ -3117,3 +3117,10 @@ execution error: None
 
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668627641.387281 
+format error: None 
+execution error: None 
+
+#model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
+model = LinearRegression()
+model.fit(X_train, y_train)
