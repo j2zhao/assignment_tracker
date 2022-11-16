@@ -494,3 +494,8 @@ for key in training.keys():
         not_hot.append(key)
         
 print(not_hot)
+new run: 1668572434.532598 
+format error: None 
+execution error: None 
+
+from scipy.sparse import hstack
