@@ -1,0 +1,6 @@
+new run: 1668563206.110595 
+format error: None 
+execution error: None 
+
+training = training.dropna()
+testing = testing.dropna()
