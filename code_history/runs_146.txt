@@ -949,3 +949,8 @@ execution error: None
 for column in d2_column:
     training = training.drop(column, axis = 1)
     testing = testing.drop(column, axis = 1)
+new run: 1668577037.4973938 
+format error: None 
+execution error: None 
+
+testing.keys()
