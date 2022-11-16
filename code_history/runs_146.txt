@@ -167,3 +167,10 @@ execution error: None
 
 y_train = y_train.reshape(-1)
 y_test = y_test.reshape(-1)
+new run: 1668568890.967787 
+format error: None 
+execution error: None 
+
+
+model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 1000)
+model.fit(X_train, y_train)
