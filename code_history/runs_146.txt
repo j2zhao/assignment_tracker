@@ -1204,3 +1204,10 @@ execution error:
 #model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
 model = LinearRegression()
 model.fit(X_train, y_train)
+new run: 1668578526.72175 
+format error: None 
+execution error: 'coo_matrix' object is not subscriptable 
+
+idx = np.random.choice(np.arange(len(y_train)), 10000, replace=False)
+x_sample = X_train[idx]
+y_sample = y_train[idx]
