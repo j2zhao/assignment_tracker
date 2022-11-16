@@ -2658,3 +2658,9 @@ y_out = model.predict(X_test)
 matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
+new run: 1668626929.947406 
+format error: None 
+execution error: None 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv')
