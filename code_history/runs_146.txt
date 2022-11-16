@@ -393,3 +393,10 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668571130.934376 
+format error: None 
+execution error: None 
+
+
+model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
+model.fit(X_train, y_train)
