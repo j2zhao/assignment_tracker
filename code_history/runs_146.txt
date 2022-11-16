@@ -25,3 +25,9 @@ new run: 1668568296.990481
 format error: None 
 execution error: None 
 training
+new run: 1668568338.311625 
+format error: None 
+execution error: None 
+
+training = training.dropna()
+testing = testing.dropna()
