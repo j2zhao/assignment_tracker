@@ -206,3 +206,10 @@ matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
 plt.show()
+new run: 1668569238.770437 
+format error: None 
+execution error: None 
+
+
+model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
+model.fit(X_train, y_train)
