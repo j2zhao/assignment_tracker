@@ -3,3 +3,9 @@ format error: None
 execution error: None 
 
 y_train.shape
+new run: 1668562488.967274 
+format error: None 
+execution error: None 
+
+y_train = y_train.reshape(-1)
+y_test = y_test.reshape(-1)
