@@ -2207,3 +2207,11 @@ execution error: None
 #model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
 model = RandomForestClassifier(min_samples_leaf = 100)
 model.fit(X_train, y_train)
+new run: 1668620454.787673 
+format error: None 
+execution error: None 
+
+
+#model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
+model = RandomForestClassifier(min_samples_leaf = 100)
+model.fit(X_train, y_train)
