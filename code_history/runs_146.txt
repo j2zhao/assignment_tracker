@@ -1907,3 +1907,11 @@ execution error: None
 
 X_train = training['DepDelayMinutes'].to_numpy().reshape(-1, 1)
 y_train = testing['DepDelayMinutes'].to_numpy().reshape(-1, 1)
+new run: 1668579740.814921 
+format error: None 
+execution error: None 
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
