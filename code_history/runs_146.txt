@@ -415,3 +415,11 @@ execution error: None
 
 y_train = training['ArrDel15'].to_numpy().reshape(-1)
 y_test = testing['ArrDel15'].to_numpy().reshape(-1)
+new run: 1668571643.1013079 
+format error: None 
+execution error: None 
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
