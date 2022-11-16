@@ -3084,3 +3084,9 @@ execution error: None
 #model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
 model = LinearRegression()
 model.fit(X_train, y_train)
+new run: 1668627593.814564 
+format error: None 
+execution error: None 
+
+y_out = model.predict(X_test)
+print(explained_variance_score(y_test, y_out))
