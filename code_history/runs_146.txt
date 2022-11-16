@@ -2149,3 +2149,9 @@ execution error: name 'y_out' is not defined
 from sklearn.metrics import accuracy_score
 
 print(accuracy_score(y_test, y_out))
+new run: 1668620351.624303 
+format error: None 
+execution error: None 
+
+X_train = training['DepDel15'].to_numpy().reshape(-1, 1)
+X_test = testing['DepDel15'].to_numpy().reshape(-1, 1)
