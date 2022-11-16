@@ -3256,3 +3256,9 @@ execution error: None
 
 X_train = hstack(array)
 X_test = hstack(array_test)
+new run: 1668627840.160579 
+format error: None 
+execution error: None 
+
+y_train = training['ArrDelayMinutes'].to_numpy().reshape(-1)
+y_test = testing['ArrDelayMinutes'].to_numpy().reshape(-1)
