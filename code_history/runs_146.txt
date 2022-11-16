@@ -2163,3 +2163,12 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668620362.479402 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import explained_variance_score
+from sklearn.linear_model import LinearRegression
