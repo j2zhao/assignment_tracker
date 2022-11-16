@@ -1404,3 +1404,7 @@ new run: 1668579326.8541539
 format error: None 
 execution error: None 
 plt.hist(y_out, bins=9)
+new run: 1668579347.617656 
+format error: None 
+execution error: None 
+plt.hist(y_out, bins=100)
