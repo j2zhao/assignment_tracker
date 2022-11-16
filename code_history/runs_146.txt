@@ -805,3 +805,13 @@ new run: 1668575876.995622
 format error: None 
 execution error: None 
 
+new run: 1668575877.8889432 
+format error: None 
+execution error: None 
+
+not_hot = []
+for key in training.keys():
+    if key not in one_hot:
+        not_hot.append(key)
+        
+print(not_hot)
