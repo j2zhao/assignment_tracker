@@ -2785,3 +2785,9 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668627093.658875 
+format error: None 
+execution error:  
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
