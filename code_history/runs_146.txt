@@ -1992,3 +1992,9 @@ for column in dropped_column:
     testing = testing.drop(column, axis = 1)
     
     
+new run: 1668619947.628473 
+format error: None 
+execution error: None 
+
+import pandas as pd
+import numpy as np
