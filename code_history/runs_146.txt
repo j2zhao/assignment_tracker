@@ -1483,3 +1483,8 @@ execution error: None
 
 y_test[y_test > 500] = 500
 y_train[y_train > 500] = 500
+new run: 1668579431.913265 
+format error: None 
+execution error: None 
+import matplotlib.pyplot as plt
+plt.hist(y_test, bins=9)
