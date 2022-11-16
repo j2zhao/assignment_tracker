@@ -2825,3 +2825,10 @@ format error: None
 execution error: None 
 
 d2_column = ['FlightDate', 'Marketing_Airline_Network', 'Operated_or_Branded_Code_Share_Partners' ,  'DOT_ID_Marketing_Airline', 'IATA_Code_Marketing_Airline', 'DOT_ID_Operating_Airline', 'IATA_Code_Operating_Airline', 'OriginAirportSeqID', 'DestAirportSeqID', 'CRSArrTime', 'DestStateName', 'DestState', 'DestCityName', 'OriginStateName', 'OriginState', 'OriginCityName','Year',  'Diverted', 'Cancelled', 'Tail_Number']
+new run: 1668627104.2342489 
+format error: None 
+execution error: "['FlightDate'] not found in axis" 
+
+for column in d2_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
