@@ -1232,3 +1232,9 @@ execution error: None
 dropped_column = ['ArrDel15', 'Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepDelay', 'ArrTime', 'AirTime', 'ActualElapsedTime', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
 
 
+new run: 1668578754.96825 
+format error: None 
+execution error: None 
+
+import pandas as pd
+import numpy as np
