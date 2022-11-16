@@ -887,3 +887,9 @@ execution error: None
 
 import pandas as pd
 import numpy as np
+new run: 1668576674.760231 
+format error: None 
+execution error: Error tokenizing data. C error: Calling read(nbytes) on source failed. Try engine='python'. 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv')
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv')
