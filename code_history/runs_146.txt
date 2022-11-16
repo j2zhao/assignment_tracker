@@ -2111,3 +2111,9 @@ execution error: 'ArrDelayMinutes'
 
 y_train = training['ArrDelayMinutes'].to_numpy().reshape(-1)
 y_test = testing['ArrDelayMinutes'].to_numpy().reshape(-1)
+new run: 1668620117.2325828 
+format error: None 
+execution error: None 
+
+y_train = training['ArrDel15'].to_numpy().reshape(-1)
+y_test = testing['ArrDel15'].to_numpy().reshape(-1)
