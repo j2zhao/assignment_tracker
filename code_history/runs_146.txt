@@ -373,3 +373,9 @@ execution error: "['Flight_Number_Marketing_Airline'] not found in axis"
 for column in dropped_column:
     training = training.drop(column, axis = 1)
     testing = testing.drop(column, axis = 1)
+new run: 1668570929.91679 
+format error: None 
+execution error: None 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
