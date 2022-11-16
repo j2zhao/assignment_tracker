@@ -3235,3 +3235,18 @@ for key in training.keys():
         not_hot.append(key)
         
 print(not_hot)
+new run: 1668627833.7489338 
+format error: None 
+execution error: None 
+
+
+#col_2 = ['CRSDepTime', 'DepTime', 'DepDelayMinutes', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDel15']
+
+col_2 = ['CRSDepTime', 'DepTime', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDel15']
+
+for col in col_2:
+    x = training[col].to_numpy().reshape(-1, 1)
+    y = testing[col].to_numpy().reshape(-1, 1)
+    array.append(x)
+    array_test.append(y)
+    
