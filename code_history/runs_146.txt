@@ -133,3 +133,9 @@ for col in col_2:
     y = testing[col].to_numpy().reshape(-1, 1)
     array.append(x)
     array_test.append(y)
+new run: 1668568624.445697 
+format error: None 
+execution error: None 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
