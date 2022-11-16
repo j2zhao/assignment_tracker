@@ -3069,3 +3069,11 @@ execution error: None
 
 X_train = training.loc[:, ['DepDel15']].to_numpy()
 X_test = testing.loc[:, ['DepDel15']].to_numpy()
+new run: 1668627587.202087 
+format error: None 
+execution error: None 
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
