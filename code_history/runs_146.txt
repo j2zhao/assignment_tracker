@@ -2028,3 +2028,8 @@ for column in dropped_column:
     testing = testing.drop(column, axis = 1)
     
     
+new run: 1668620103.66158 
+format error: None 
+execution error: None 
+
+training.keys()
