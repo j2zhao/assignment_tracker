@@ -2614,3 +2614,10 @@ y_out = model.predict(X_test)
 matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
+new run: 1668621915.020191 
+format error: None 
+execution error: None 
+
+from sklearn.metrics import accuracy_score
+
+print(accuracy_score(y_test, y_out))
