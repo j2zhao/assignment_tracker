@@ -2354,3 +2354,9 @@ execution error: Too many indexers
 
 X_train = training.loc['DepDel15', 'DepDelayMinutes', 'DepTime'].to_numpy()
 X_test = testing.loc['DepDel15', 'DepDelayMinutes', 'DepTime'].to_numpy()
+new run: 1668620924.4657989 
+format error: None 
+execution error: None 
+
+X_train = training.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
+X_test = testing.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
