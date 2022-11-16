@@ -1,0 +1,15 @@
+new run: 1668563407.3084328 
+format error: None 
+execution error: None 
+
+encode = OneHotEncoder(handle_unknown = 'ignore')
+
+array = []
+array_test = []
+for hot in one_hot:
+    print(hot)
+    x = encode.fit_transform(training[hot].to_numpy().reshape(-1, 1))
+    y = encode.transform(testing[hot].to_numpy().reshape(-1, 1))
+    print(x.shape)
+    array.append(x)
+    array_test.append(y)
