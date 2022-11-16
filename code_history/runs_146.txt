@@ -1935,3 +1935,9 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668579760.901016 
+format error: None 
+execution error: None 
+
+y_test[y_test > 500] = 500
+y_train[y_train > 500] = 500
