@@ -1145,3 +1145,8 @@ format error: None
 execution error: None 
 import matplotlib.pyplot as plt
 plt.hist(y_test, bins=9)
+new run: 1668578058.2541509 
+format error: None 
+execution error: None 
+
+np.max(y_test)
