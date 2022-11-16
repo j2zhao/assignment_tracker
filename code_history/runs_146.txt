@@ -1170,3 +1170,9 @@ execution error: None
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import explained_variance_score
 
+new run: 1668578303.026689 
+format error: None 
+execution error:  
+
+model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
+model.fit(X_train, y_train)
