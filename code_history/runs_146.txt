@@ -2978,3 +2978,9 @@ execution error: None
 
 X_train = hstack(array)
 X_test = hstack(array_test)
+new run: 1668627325.3583848 
+format error: None 
+execution error: 'ArrDel15' 
+
+y_train = training['ArrDel15'].to_numpy().reshape(-1)
+y_test = testing['ArrDel15'].to_numpy().reshape(-1)
