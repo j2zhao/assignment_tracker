@@ -1025,3 +1025,12 @@ new run: 1668577049.025242
 format error: None 
 execution error: None 
 print(np.sum(y_train))
+new run: 1668577050.2729 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import explained_variance_score
+
