@@ -2180,3 +2180,12 @@ execution error: name 'RandomForestClassifier' is not defined
 #model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
 model = RandomForestClassifier(min_samples_leaf = 100)
 model.fit(X_train, y_train)
+new run: 1668620389.756515 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import explained_variance_score
+from sklearn.linear_model import LinearRegression
