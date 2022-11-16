@@ -1396,3 +1396,7 @@ new run: 1668578938.6545112
 format error: None 
 execution error: None 
 print(np.sum(y_out))
+new run: 1668579310.072266 
+format error: None 
+execution error: None 
+print(np.sum(y_out == 0))
