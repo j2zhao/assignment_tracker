@@ -2259,3 +2259,9 @@ execution error: None
 from sklearn.metrics import accuracy_score
 
 print(accuracy_score(y_test, y_out))
+new run: 1668620643.9238322 
+format error: None 
+execution error: None 
+
+X_train = training['DepDelayMinutes'].to_numpy().reshape(-1, 1)
+X_test = testing['DepDelayMinutes'].to_numpy().reshape(-1, 1)
