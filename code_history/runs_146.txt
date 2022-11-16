@@ -73,3 +73,8 @@ execution error: None
 for col in training:
     print(col)
     print(training[col].unique())
+new run: 1668568578.560002 
+format error: None 
+execution error: None 
+
+one_hot = ['DestWac', 'DestStateFips', 'DestCityMarketID', 'DestAirportID', 'OriginWac', 'OriginStateFips', 'OriginCityMarketID', 'OriginAirportID', 'Operating_Airline', 'DayOfWeek', 'Month', 'Quarter', 'Dest', 'Origin', 'Airline' ]
