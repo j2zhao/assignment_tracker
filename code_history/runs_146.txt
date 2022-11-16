@@ -1150,3 +1150,9 @@ format error: None
 execution error: None 
 
 np.max(y_test)
+new run: 1668578119.1209211 
+format error: None 
+execution error: None 
+
+y_test[y_test > 500] = 500
+y_train[y_train > 500] = 500
