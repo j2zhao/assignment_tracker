@@ -2142,3 +2142,10 @@ matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
 plt.show()
+new run: 1668620122.5522099 
+format error: None 
+execution error: name 'y_out' is not defined 
+
+from sklearn.metrics import accuracy_score
+
+print(accuracy_score(y_test, y_out))
