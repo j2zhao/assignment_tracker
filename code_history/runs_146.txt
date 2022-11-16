@@ -2155,3 +2155,11 @@ execution error: None
 
 X_train = training['DepDel15'].to_numpy().reshape(-1, 1)
 X_test = testing['DepDel15'].to_numpy().reshape(-1, 1)
+new run: 1668620355.081866 
+format error: None 
+execution error: None 
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
