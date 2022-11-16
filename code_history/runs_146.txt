@@ -2621,3 +2621,9 @@ execution error: None
 from sklearn.metrics import accuracy_score
 
 print(accuracy_score(y_test, y_out))
+new run: 1668622612.740461 
+format error: None 
+execution error: None 
+
+X_train = training.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
+X_test = testing.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
