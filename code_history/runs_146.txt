@@ -78,3 +78,9 @@ format error: None
 execution error: None 
 
 one_hot = ['DestWac', 'DestStateFips', 'DestCityMarketID', 'DestAirportID', 'OriginWac', 'OriginStateFips', 'OriginCityMarketID', 'OriginAirportID', 'Operating_Airline', 'DayOfWeek', 'Month', 'Quarter', 'Dest', 'Origin', 'Airline' ]
+new run: 1668568581.471779 
+format error: None 
+execution error: None 
+
+from sklearn.preprocessing import OneHotEncoder
+
