@@ -196,3 +196,13 @@ matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 disp.plot()
 plt.show()
+new run: 1668569081.95612 
+format error: None 
+execution error: None 
+
+
+
+matrix = confusion_matrix(y_test, y_out)
+display = ConfusionMatrixDisplay(matrix)
+display.plot()
+plt.show()
