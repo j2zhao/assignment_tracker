@@ -9,7 +9,7 @@ import subprocess
 
 #COMPILER_COMMAND = 'python' # replace with whatever usually used in the commandline ex. python3
 
-MAX_SIZE = 100
+MAX_SIZE = 20000000
 
 def check_diff(repo):
     hcommit = repo.head.commit
