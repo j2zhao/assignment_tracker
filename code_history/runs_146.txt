@@ -1224,3 +1224,11 @@ execution error: None
 
 training = training.dropna()
 testing = testing.dropna()
+new run: 1668578754.1206982 
+format error: None 
+execution error: None 
+
+
+dropped_column = ['ArrDel15', 'Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepDelay', 'ArrTime', 'AirTime', 'ActualElapsedTime', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
+
+
