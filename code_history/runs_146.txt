@@ -1954,3 +1954,11 @@ execution error: None
 
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668579861.5892339 
+format error: None 
+execution error: None 
+
+
+dropped_column = ['ArrDelayMinutes', 'Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepDelay', 'ArrTime', 'AirTime', 'ActualElapsedTime', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
+
+
