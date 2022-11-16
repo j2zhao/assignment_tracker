@@ -1182,3 +1182,12 @@ execution error: name 'LinearRegression' is not defined
 
 #model = RandomForestRegressor(max_samples = 0.01, min_samples_leaf = 100)
 model = LinearRegression()
+new run: 1668578394.3927748 
+format error: None 
+execution error: None 
+
+# REGRESSION TEST
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import explained_variance_score
+from sklearn.linear_model import LinearRegression
