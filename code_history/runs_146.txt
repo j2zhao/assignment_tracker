@@ -409,3 +409,9 @@ matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
 plt.show()
+new run: 1668571635.7212842 
+format error: None 
+execution error: None 
+
+y_train = training['ArrDel15'].to_numpy().reshape(-1)
+y_test = testing['ArrDel15'].to_numpy().reshape(-1)
