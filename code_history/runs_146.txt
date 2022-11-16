@@ -2627,3 +2627,11 @@ execution error: None
 
 X_train = training.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
 X_test = testing.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
+new run: 1668622632.5414789 
+format error: None 
+execution error: None 
+
+
+#model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 100)
+model = RandomForestClassifier(min_samples_leaf = 100)
+model.fit(X_train, y_train)
