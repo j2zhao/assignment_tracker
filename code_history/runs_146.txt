@@ -1400,3 +1400,7 @@ new run: 1668579310.072266
 format error: None 
 execution error: None 
 print(np.sum(y_out == 0))
+new run: 1668579326.8541539 
+format error: None 
+execution error: None 
+plt.hist(y_out, bins=9)
