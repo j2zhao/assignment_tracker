@@ -1625,3 +1625,18 @@ new run: 1668579533.787946
 format error: None 
 execution error: None 
 plt.hist(y_out, bins=100)
+new run: 1668579564.5653372 
+format error: None 
+execution error: None 
+
+
+#col_2 = ['CRSDepTime', 'DepTime', 'DepDelayMinutes', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDel15']
+
+col_2 = ['CRSDepTime', 'DepTime', 'CRSElapsedTime', 'Distance', 'DayofMonth', 'DepDelayMinutes']
+
+for col in col_2:
+    x = training[col].to_numpy().reshape(-1, 1)
+    y = testing[col].to_numpy().reshape(-1, 1)
+    array.append(x)
+    array_test.append(y)
+    
