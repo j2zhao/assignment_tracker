@@ -1657,3 +1657,11 @@ format error: None
 execution error: None 
 
 
+new run: 1668579571.196033 
+format error: None 
+execution error: None 
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
