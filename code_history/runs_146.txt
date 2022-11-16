@@ -1001,3 +1001,9 @@ for col in col_2:
     array.append(x)
     array_test.append(y)
     
+new run: 1668577045.1292741 
+format error: None 
+execution error: blocks must be 2-D 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
