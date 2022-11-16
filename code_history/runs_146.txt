@@ -1962,3 +1962,9 @@ execution error: None
 dropped_column = ['ArrDelayMinutes', 'Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepDelay', 'ArrTime', 'AirTime', 'ActualElapsedTime', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
 
 
+new run: 1668585683.849526 
+format error: None 
+execution error: None 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
