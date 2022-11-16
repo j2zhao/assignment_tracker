@@ -2679,3 +2679,12 @@ execution error: None
 dropped_column = ['ArrDelayMinutes', 'Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepDelay', 'ArrTime', 'AirTime', 'ActualElapsedTime', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
 
 
+new run: 1668627007.9268968 
+format error: None 
+execution error: None 
+
+for column in dropped_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
+    
+    
