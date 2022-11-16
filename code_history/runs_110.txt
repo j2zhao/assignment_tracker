@@ -3,3 +3,10 @@ format error: None
 execution error: None 
 
 testing.keys()
+new run: 1668558758.64814 
+format error: None 
+execution error: None 
+
+for col in training:
+    print(col)
+    print(training[col].unique())
