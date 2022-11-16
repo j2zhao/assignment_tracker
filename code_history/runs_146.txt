@@ -1563,3 +1563,9 @@ for col in col_2:
     array.append(x)
     array_test.append(y)
     
+new run: 1668579510.483264 
+format error: None 
+execution error: None 
+
+X_train = hstack(array)
+X_test = hstack(array_test)
