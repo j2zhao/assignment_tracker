@@ -801,3 +801,7 @@ for hot in one_hot:
     print(x.shape)
     array.append(x)
     array_test.append(y)
+new run: 1668575876.995622 
+format error: None 
+execution error: None 
+
