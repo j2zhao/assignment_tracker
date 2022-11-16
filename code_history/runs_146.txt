@@ -2771,3 +2771,9 @@ execution error: None
 
 y_train = training['ArrDel15'].to_numpy().reshape(-1)
 y_test = testing['ArrDel15'].to_numpy().reshape(-1)
+new run: 1668627076.957355 
+format error: None 
+execution error: None 
+
+X_train = training.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
+X_test = testing.loc[:, ['DepDel15', 'DepDelayMinutes', 'DepTime']].to_numpy()
