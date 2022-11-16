@@ -3034,3 +3034,7 @@ execution error: None
 
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668627446.26524 
+format error: None 
+execution error: name 'plt' is not defined 
+plt.hist(y_out, bins=100)
