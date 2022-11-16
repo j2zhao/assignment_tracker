@@ -2791,3 +2791,10 @@ execution error:
 
 training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
 testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
+new run: 1668627098.890836 
+format error: None 
+execution error: None 
+
+
+training = training.dropna()
+testing = testing.dropna()
