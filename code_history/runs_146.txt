@@ -174,3 +174,9 @@ execution error: None
 
 model = RandomForestClassifier(max_samples = 0.01, min_samples_leaf = 1000)
 model.fit(X_train, y_train)
+new run: 1668568911.9320672 
+format error: None 
+execution error: 'RandomForestClassifier' object has no attribute 'transform' 
+
+y_out = model.transform(X_test)
+
