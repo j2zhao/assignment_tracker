@@ -1,0 +1,7 @@
+new run: 1668563362.874024 
+format error: None 
+execution error: None 
+
+for column in d2_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
