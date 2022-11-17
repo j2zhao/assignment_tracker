@@ -3504,3 +3504,9 @@ for hot in one_hot:
     encode = OneHotEncoder(handle_unknown = 'ignore')
     encode.fit(training[hot].to_numpy().reshape(-1, 1))
     encoders[hot] = encode
+new run: 1668712699.293571 
+format error: None 
+execution error: None 
+
+training.reset_index()
+testing.reset_index()
