@@ -3474,3 +3474,10 @@ format error: None
 execution error: None 
 
 testing.keys()
+new run: 1668711887.629385 
+format error: None 
+execution error: None 
+
+encoders = {}
+
+one_hot = ['DestWac', 'DestStateFips', 'DestCityMarketID', 'DestAirportID', 'OriginWac', 'OriginStateFips', 'OriginCityMarketID', 'OriginAirportID', 'Operating_Airline', 'Dest', 'Origin', 'Airline' ]
