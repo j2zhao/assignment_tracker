@@ -3412,3 +3412,9 @@ execution error: "['Flight_Number_Marketing_Airline'] not found in axis"
 for column in dropped_column:
     training = training.drop(column, axis = 1)
     testing = testing.drop(column, axis = 1)
+new run: 1668710995.402229 
+format error: None 
+execution error: None 
+
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(1000000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(1000000)
