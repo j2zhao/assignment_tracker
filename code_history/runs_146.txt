@@ -3405,3 +3405,10 @@ execution error: None
 dropped_column = ['Flight_Number_Marketing_Airline', 'Flight_Number_Operating_Airline', 'DepTime', 'DepDelay', 'ArrTime', 'ArrDelayMinutes', 'AirTime', 'ActualElapsedTime', 'DepDelayMinutes', 'DepartureDelayGroups', 'DepTimeBlk', 'TaxiOut', 'WheelsOff', 'WheelsOn', 'TaxiIn', 'ArrDelay', 'ArrDel15', 'ArrivalDelayGroups', 'ArrTimeBlk', 'DistanceGroup', 'DivAirportLandings']
 
 
+new run: 1668710800.8186119 
+format error: None 
+execution error: "['Flight_Number_Marketing_Airline'] not found in axis" 
+
+for column in dropped_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
