@@ -3382,3 +3382,9 @@ execution error: None
 
 
 training.keys()
+new run: 1668710667.8009658 
+format error: None 
+execution error: None 
+
+
+training['CRSDepTime'].unique()
