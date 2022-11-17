@@ -3566,3 +3566,59 @@ def get_previous_days(df, current_row_index, previous_days = 14):
     raise NotImplemented()
     
 
+new run: 1668714331.706452 
+format error: None 
+execution error: None 
+
+def get_previous_rows(df, current_row_index, previous_rows_num = 50):
+    ''' Given a sorted pandas dataframe and row index, return previous rows
+    
+    df: dataframe, eg. the training dataset
+    current_row_index: row index to get previous rows from
+    previous_rows_num: 
+    
+    
+    '''
+    if previous_rows_num <= 0:
+        raise ValueError('invalid row number')
+    index = current_row_index - previous_rows_num
+    if index < 0:
+        raise ValueError('current_row_index less than previous_rows_num')
+    subset = df.iloc[index:current_row_index]
+    return subset
+
+
+month_days = {1: 31, 2: 29, 3: 31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31}
+
+
+def _get_previous_days(num, month, day):
+    last = (month, day)
+    previous_days = [last]
+    for i in range(num - 1):
+        m, d = previous_days[-1]
+        if d == 1:
+            m -= 1
+            if m == 0:
+                raise ValueError('previous days not in dataset')
+            d = month_days[m]
+        else:
+            d -= 1
+        
+        previous_days.append((d, m))
+
+
+
+def get_previous_days(df, current_row_index, previous_days = 14):
+    ''' Given a sorted pandas dataframe with columns 'Month', 'DayofMonth', 'CRSDepTime', and a row index, 
+    return the rows that are 'previous_days' days before 'df.iloc[current_row_index]'
+    
+    Note: this includes flights on the current day that have an estimated departure time BEFORE the df.iloc[current_row_index]
+    
+    df: dataframe, eg. training dataset
+    current_row_index: row index to evaluate
+    previous_days: number of days prior to row, counting current one
+    
+    '''
+    raise NotImplemented()
+    
+
