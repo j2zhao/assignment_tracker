@@ -3370,3 +3370,9 @@ execution error: None
 
 import pandas as pd
 from pandas.api.types import CategoricalDtype
+new run: 1668710335.824362 
+format error: None 
+execution error: None 
+
+
+training
