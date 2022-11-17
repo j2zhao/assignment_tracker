@@ -3446,3 +3446,8 @@ format error: None
 execution error: None 
 training = training.sort_values(['Month', 'DayofMonth', 'CRSDepTime'])
 testing = testing.sort_values(['Month', 'DayofMonth', 'CRSDepTime'])
+new run: 1668711498.998213 
+format error: None 
+execution error: None 
+
+training
