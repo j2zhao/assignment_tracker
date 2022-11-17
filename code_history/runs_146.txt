@@ -3481,3 +3481,11 @@ execution error: None
 encoders = {}
 
 one_hot = ['DestWac', 'DestStateFips', 'DestCityMarketID', 'DestAirportID', 'OriginWac', 'OriginStateFips', 'OriginCityMarketID', 'OriginAirportID', 'Operating_Airline', 'Dest', 'Origin', 'Airline' ]
+new run: 1668711936.813768 
+format error: None 
+execution error: name 'OneHotEncoder' is not defined 
+
+for hot in one_hot:
+    encode = OneHotEncoder(handle_unknown = 'ignore')
+    encode.fit(training[hot].to_numpy().reshape(-1, 1))
+    encoders[hot] = encode
