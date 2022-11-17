@@ -3388,3 +3388,8 @@ execution error: None
 
 
 training['CRSDepTime'].unique()
+new run: 1668710745.4148638 
+format error: None 
+execution error: None 
+training = training.sort_values(['Month', 'DayofMonth', 'CRSDepTime'])
+testing = testing.sort_values(['Month', 'DayofMonth', 'CRSDepTime'])
