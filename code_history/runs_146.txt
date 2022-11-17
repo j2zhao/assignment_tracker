@@ -3283,3 +3283,9 @@ execution error: None
 
 y_out = model.predict(X_test)
 print(explained_variance_score(y_test, y_out))
+new run: 1668709355.600296 
+format error: None 
+execution error: name 'pd' is not defined 
+training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
+testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
+
