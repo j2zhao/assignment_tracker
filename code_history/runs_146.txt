@@ -3489,3 +3489,10 @@ for hot in one_hot:
     encode = OneHotEncoder(handle_unknown = 'ignore')
     encode.fit(training[hot].to_numpy().reshape(-1, 1))
     encoders[hot] = encode
+new run: 1668711944.743705 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
