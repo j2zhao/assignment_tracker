@@ -3301,3 +3301,12 @@ execution error:
 training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
 testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
 
+new run: 1668709565.972359 
+format error: None 
+execution error: name 'testing' is not defined 
+
+training = training.dropna()
+testing = testing.dropna()
+
+
+
