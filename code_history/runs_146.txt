@@ -3345,3 +3345,10 @@ execution error: None
 
 training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(1000000)
 testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(1000000)
+new run: 1668710211.1194801 
+format error: None 
+execution error: None 
+
+for column in dropped_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
