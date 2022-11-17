@@ -3627,3 +3627,13 @@ format error: None
 execution error: None 
 
 print(training.keys())
+new run: 1668714478.203359 
+format error: None 
+execution error: None 
+
+d3_column = ['Month', 'DayofMonth']
+
+
+for column in d3_column:
+    training = training.drop(column, axis = 1)
+    testing = testing.drop(column, axis = 1)
