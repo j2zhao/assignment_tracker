@@ -3289,3 +3289,9 @@ execution error: name 'pd' is not defined
 training = pd.read_csv('../archive/Combined_Flights_2018.csv').sample(100000)
 testing = pd.read_csv('../archive/Combined_Flights_2019.csv').sample(100000)
 
+new run: 1668709483.069209 
+format error: None 
+execution error: None 
+
+import pandas as pd
+
