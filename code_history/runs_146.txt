@@ -4230,3 +4230,9 @@ def get_features_row(df, index):
 
 get_features_row(training, 20)
     
+new run: 1668738970.811945 
+format error: None 
+execution error: None 
+
+X_train_time = np.zeros((980430 - 20, 2436*2 + 1))
+X_test_time = np.zeros((978592 - 20, 2436*2 + 1))
