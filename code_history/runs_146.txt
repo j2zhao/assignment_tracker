@@ -3673,3 +3673,8 @@ format error: None
 execution error: None 
 
 print(testing['DestWac'])
+new run: 1668733040.343434 
+format error: None 
+execution error: 'Series' object has no attribute 'uniques' 
+
+print(testing['DestWac'].uniques())
