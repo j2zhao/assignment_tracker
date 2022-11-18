@@ -5796,3 +5796,7 @@ new run: 1668776259.54754
 format error: None 
 execution error: None 
 training_X = np.delete(training_X, index, axis = 0)
+new run: 1668776275.457602 
+format error: None 
+execution error: None 
+training_y = np.delete(training_y, index, axis = 0)
