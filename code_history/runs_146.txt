@@ -5808,3 +5808,8 @@ new run: 1668776306.6404018
 format error: None 
 execution error: None 
 testing_y = np.delete(testing_y, index_t, axis = 0)
+new run: 1668776310.561259 
+format error: None 
+execution error: None 
+model = tree.DecisionTreeClassifier()
+model = model.fit(training_X, training_y)
