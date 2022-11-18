@@ -5282,3 +5282,7 @@ training = training.rename(columns = {'DayOfWeek' : 'Weekend'})
 training['Weekend'] = (training['Weekend'] > 5).astype(int)
 testing = testing.rename(columns = {'DayOfWeek' : 'Weekend'})
 testing['Weekend'] = (testing['Weekend'] > 5).astype(int)
+new run: 1668774365.1193368 
+format error: None 
+execution error: name 'df' is not defined 
+df['Airline'].nunique()
