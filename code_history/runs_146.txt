@@ -5120,3 +5120,11 @@ execution error:
 for x in y_test:
     print(x.shape)
     raise ValueError()
+new run: 1668772579.983863 
+format error: None 
+execution error: None 
+for i in range(len(y_test)):
+    y_test[i] = y_test[i].reshape((-1, 1))
+
+for i in range(len(y_train)):
+    y_train[i] = y_train[i].reshape((-1, 1))
