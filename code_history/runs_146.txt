@@ -5689,3 +5689,13 @@ format error: None
 execution error: None 
 testing_X = testing_X.values
 testing_y = testing_y.values
+new run: 1668775919.022228 
+format error: None 
+execution error: None 
+model = StandardScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
+
+model = MinMaxScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
