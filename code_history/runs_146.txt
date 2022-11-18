@@ -5837,3 +5837,7 @@ new run: 1668776400.590346
 format error: None 
 execution error: None 
 print(confusion_matrix(testing_y, y_pred_test))
+new run: 1668777246.636265 
+format error: None 
+execution error: name 'y_test' is not defined 
+print(classification_report(y_test, y_pred_test))
