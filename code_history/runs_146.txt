@@ -5953,3 +5953,7 @@ new run: 1668812631.146347
 format error: None 
 execution error: None 
 testing_X.shape
+new run: 1668812636.744939 
+format error: None 
+execution error: None 
+training.shape
