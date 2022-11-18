@@ -5560,3 +5560,11 @@ for key in testing['Dest'].unique():
     if key not in dest_df.index:
         dest_df.loc[key] = [0, cat]
 dest_df
+new run: 1668775502.8349361 
+format error: None 
+execution error: 'DEST' 
+data_dest = dest_df.loc[training['DEST']].reset_index()
+training['DEST_cat'] = data_dest['DEST_cat']
+
+data_dest = dest_df.loc[testing['DEST']].reset_index()
+testing['DEST_cat'] = data_dest['DEST_cat']
