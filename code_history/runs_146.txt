@@ -5845,3 +5845,7 @@ new run: 1668777252.794341
 format error: None 
 execution error: None 
 print(classification_report(testing_y, y_pred_test))
+new run: 1668777299.031509 
+format error: None 
+execution error: name 'X_test' is not defined 
+plot_roc_curve(model, X_test, y_test)
