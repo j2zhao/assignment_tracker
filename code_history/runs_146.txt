@@ -3791,3 +3791,14 @@ temp = np.sum(Y_train[0:20], axis = 0)
 print(temp.shape)
 X_train_time[0, 2436] = temp
 X_train_time[0, 2437:] = X_train[0]
+new run: 1668738029.0105548 
+format error: None 
+execution error: 'coo_matrix' object is not subscriptable 
+
+temp = np.sum(X_train[0], axis = 0)
+print(temp.shape)
+# X_train_time[0, 0:2436] = temp
+# temp = np.sum(Y_train[0:20], axis = 0)
+# print(temp.shape)
+# X_train_time[0, 2436] = temp
+# X_train_time[0, 2437:] = X_train[0]
