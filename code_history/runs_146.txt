@@ -5063,3 +5063,13 @@ execution error: None
 
 for i in train:
     print(i)
+new run: 1668754307.082405 
+format error: None 
+execution error:  
+
+for i,j in enumerate(train):
+    if i%1000:
+        print(i)
+    X, y = get_features_row(training, j)
+    X_train.append(X)
+    y_train.append(y)
