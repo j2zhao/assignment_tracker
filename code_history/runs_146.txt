@@ -5035,3 +5035,8 @@ format error: None
 execution error: 'list' object has no attribute 'shape' 
 
 print(X_train.shape)
+new run: 1668753969.928458 
+format error: None 
+execution error: None 
+
+print(X_train)
