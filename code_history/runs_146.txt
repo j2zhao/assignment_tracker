@@ -5427,3 +5427,9 @@ You can drop duplicate edges by setting the 'duplicates' kwarg
 origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
 origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 15, labels = False)
 origin_df
+new run: 1668774880.720853 
+format error: None 
+execution error: None 
+origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
+origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 10, labels = False)
+origin_df
