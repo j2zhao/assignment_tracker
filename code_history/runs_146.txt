@@ -5336,3 +5336,8 @@ format error: None
 execution error: None 
 data_time = time_blk_df.loc[training['CRSDepTime']].reset_index()
 training['DEP_TIME_cat'] = data_time['TIME_cat']
+new run: 1668774716.259443 
+format error: None 
+execution error: None 
+data_time = time_blk_df.loc[testing['CRSDepTime']].reset_index()
+testing['DEP_TIME_cat'] = data_time['TIME_cat']
