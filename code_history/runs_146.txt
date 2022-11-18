@@ -5331,3 +5331,8 @@ execution error: None
 time_blk_df = training[['CRSDepTime','ArrDel15']].groupby('CRSDepTime').sum().sort_values(by='ArrDel15',ascending=False)
 time_blk_df['TIME_cat'] = pd.qcut(time_blk_df['ArrDel15'], 19, labels = False)
 time_blk_df
+new run: 1668774708.22754 
+format error: None 
+execution error: None 
+data_time = time_blk_df.loc[training['CRSDepTime']].reset_index()
+training['DEP_TIME_cat'] = data_time['TIME_cat']
