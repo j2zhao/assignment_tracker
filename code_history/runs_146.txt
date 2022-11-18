@@ -5073,3 +5073,13 @@ for i,j in enumerate(train):
     X, y = get_features_row(training, j)
     X_train.append(X)
     y_train.append(y)
+new run: 1668754946.2484639 
+format error: None 
+execution error: None 
+
+for i,j in enumerate(train):
+    if i%1000 == 0:
+        print(i)
+    X, y = get_features_row(training, j)
+    X_train.append(X)
+    y_train.append(y)
