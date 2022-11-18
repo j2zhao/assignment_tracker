@@ -5516,3 +5516,11 @@ for key in testing['Origin'].unique():
     if key not in origin_df.index:
         origin_df.loc[key] = [0, cat]
 origin_df
+new run: 1668775319.689496 
+format error: None 
+execution error: None 
+data_origin = origin_df.loc[training['Origin']].reset_index()
+training['ORIGIN_cat'] = data_origin['ORIGIN_cat']
+
+data_origin = origin_df.loc[testing['Origin']].reset_index()
+testing['ORIGIN_cat'] = data_origin['ORIGIN_cat']
