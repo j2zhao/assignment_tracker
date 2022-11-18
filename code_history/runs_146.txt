@@ -3909,3 +3909,7 @@ def get_previous_days(df, current_row_index, previous_days = 14):
     raise NotImplemented()
     
 
+new run: 1668738643.473778 
+format error: None 
+execution error: None 
+
