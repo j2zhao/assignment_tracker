@@ -5351,3 +5351,9 @@ format error: None
 execution error: None 
 
 training['Origin'].nunique()
+new run: 1668774771.43396 
+format error: None 
+execution error: name 'df' is not defined 
+origin_df = df[['Origin','ARR_DEL15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
+origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 25, labels = False)
+origin_df
