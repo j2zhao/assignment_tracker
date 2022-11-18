@@ -5849,3 +5849,7 @@ new run: 1668777299.031509
 format error: None 
 execution error: name 'X_test' is not defined 
 plot_roc_curve(model, X_test, y_test)
+new run: 1668777311.3767512 
+format error: None 
+execution error: None 
+plot_roc_curve(model, testing_X, testing_y)
