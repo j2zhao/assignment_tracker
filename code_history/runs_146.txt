@@ -5315,3 +5315,7 @@ new run: 1668774577.541354
 format error: None 
 execution error: name 'df' is not defined 
 df['CRSDepTime'].nunique()
+new run: 1668774581.7787242 
+format error: None 
+execution error: None 
+training['CRSDepTime'].nunique()
