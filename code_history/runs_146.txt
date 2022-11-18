@@ -5524,3 +5524,8 @@ training['ORIGIN_cat'] = data_origin['ORIGIN_cat']
 
 data_origin = origin_df.loc[testing['Origin']].reset_index()
 testing['ORIGIN_cat'] = data_origin['ORIGIN_cat']
+new run: 1668775358.1466508 
+format error: None 
+execution error: None 
+training['Dest'].nunique()
+
