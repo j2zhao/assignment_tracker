@@ -5357,3 +5357,9 @@ execution error: name 'df' is not defined
 origin_df = df[['Origin','ARR_DEL15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
 origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 25, labels = False)
 origin_df
+new run: 1668774787.664881 
+format error: None 
+execution error: "['ARR_DEL15'] not in index" 
+origin_df = training[['Origin','ARR_DEL15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
+origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 25, labels = False)
+origin_df
