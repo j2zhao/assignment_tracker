@@ -5961,3 +5961,10 @@ new run: 1668812651.2880619
 format error: None 
 execution error: None 
 testing_X.shape
+new run: 1668812684.684567 
+format error: None 
+execution error: None 
+
+#testing_y = testing['DepDel15']
+
+testing_X = testing.drop('DepDel15', axis = 1)
