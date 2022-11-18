@@ -5286,3 +5286,7 @@ new run: 1668774365.1193368
 format error: None 
 execution error: name 'df' is not defined 
 df['Airline'].nunique()
+new run: 1668774369.954056 
+format error: None 
+execution error: None 
+training['Airline'].nunique()
