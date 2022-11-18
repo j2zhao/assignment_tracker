@@ -5447,3 +5447,9 @@ execution error: 'Series' object has no attribute 'uniques'
 for key in testing['Origin'].uniques():
     if key not in origin_df:
         print(key)
+new run: 1668775108.281667 
+format error: None 
+execution error: None 
+for key in testing['Origin'].unique():
+    if key not in origin_df:
+        print(key)
