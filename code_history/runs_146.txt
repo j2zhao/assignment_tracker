@@ -5720,3 +5720,8 @@ format error: None
 execution error: name 'X_train' is not defined 
 model = tree.DecisionTreeClassifier()
 model = model.fit(X_train, y_train)
+new run: 1668775977.354097 
+format error: None 
+execution error: Input contains NaN, infinity or a value too large for dtype('float64'). 
+model = tree.DecisionTreeClassifier()
+model = model.fit(training_X, training_y)
