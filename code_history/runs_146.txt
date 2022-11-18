@@ -5596,3 +5596,8 @@ format error: None
 execution error: None 
 training = training[['Weekend', 'CARRIER_cat','DEP_TIME_cat', 'ORIGIN_cat', 'DEST_cat', 'Distance', 'ArrDel15']]
 training
+new run: 1668775600.911652 
+format error: None 
+execution error: "['ARR_DEL15'] not found in axis" 
+training_X = training.drop('ARR_DEL15', axis=1)
+training_y =  training[['ARR_DEL15']]
