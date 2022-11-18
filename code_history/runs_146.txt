@@ -5476,3 +5476,12 @@ for key in testing['Origin'].unique():
         origin_df.loc[len(origin_df.index)] = [key, 0, cat]
         cat += 1
 origin_df
+new run: 1668775290.4971578 
+format error: None 
+execution error: None 
+cat = 10
+for key in testing['Origin'].unique():
+    if key not in origin_df.index:
+        origin_df.loc[key] = [0, cat]
+        cat += 1
+origin_df
