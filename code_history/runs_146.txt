@@ -3753,3 +3753,9 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668733161.5646799 
+format error: None 
+execution error: name 'np' is not defined 
+
+X_train_time = np.zeros((980430, 2436*2 + 1))
+X_test_time = np.zeros((978592, 2436*2 + 1))
