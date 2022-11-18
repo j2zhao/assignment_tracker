@@ -5346,3 +5346,8 @@ format error: None
 execution error: name 'df' is not defined 
 
 df['Origin'].nunique()
+new run: 1668774742.698965 
+format error: None 
+execution error: None 
+
+training['Origin'].nunique()
