@@ -5241,3 +5241,10 @@ execution error: 'DIVERTED'
 training = training[training['DIVERTED'] == 0]
 testing = testing[testing['CANCELLED'] == 0]
 
+new run: 1668774181.7686899 
+format error: None 
+execution error: None 
+
+training = training[training['Diverted'] == 0]
+testing = testing[testing['Cancelled'] == 0]
+
