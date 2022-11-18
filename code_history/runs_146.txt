@@ -5699,3 +5699,8 @@ testing_X = model.transform(testing_X)
 model = MinMaxScaler()
 training_X = model.fit_transform(training_X)
 testing_X = model.transform(testing_X)
+new run: 1668775935.005676 
+format error: None 
+execution error: name 'tree' is not defined 
+model = tree.DecisionTreeClassifier()
+model = model.fit(X_train, y_train)
