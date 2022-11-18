@@ -5467,3 +5467,12 @@ for key in testing['Origin'].unique():
     if key not in origin_df.index:
         df.loc[len(df.index)] = [key, 0, cat]
         cat += 1
+new run: 1668775249.3502269 
+format error: None 
+execution error: cannot set a row with mismatched columns 
+cat = 10
+for key in testing['Origin'].unique():
+    if key not in origin_df.index:
+        origin_df.loc[len(origin_df.index)] = [key, 0, cat]
+        cat += 1
+origin_df
