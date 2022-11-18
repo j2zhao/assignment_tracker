@@ -4285,3 +4285,54 @@ def get_features_row(df, index):
 
 get_features_row(training, 20)
     
+new run: 1668739031.999748 
+format error: None 
+execution error: no supported conversion for types: (dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('float64'), dtype('O'), dtype('O'), dtype('O')) 
+
+# features: count of previous 20
+not_hot = ['CRSDepTime', 'CRSElapsedTime', 'Distance']
+
+
+
+def get_feature_vector(sub_df, is_scalar = False):
+    array = []
+    for hot in one_hot:
+        if is_scalar:
+            x = sub_df[hot].reshape(-1, 1)
+        else:
+            x = sub_df[hot].to_numpy().reshape(-1, 1)
+        x = encoders[hot].transform(x)
+        print(x.shape)
+        array.append(x)
+
+    for col in not_hot:
+        if is_scalar:
+            x = sub_df[hot].reshape(-1, 1)
+        else:
+            x = sub_df[hot].to_numpy().reshape(-1, 1)
+        print(x.shape)
+        array.append(x)
+
+    X_train = hstack(array)
+    y_train = sub_df['DepDel15'].to_numpy().reshape(-1)
+    
+    return X_train, y_train
+
+
+def get_features_row(df, index):
+    prev_rows = get_previous_rows(df, index)
+    prev_X, prev_Y = get_feature_vector(prev_rows)
+    prev_Y = prev_Y.reshape(-1, 1)   
+    prev_features = hstack([prev_X, prev_Y])
+    print(prev_features.shape)
+    prev_features = np.sum(prev_features, axis = 0)
+    print(prev_features.shape)
+    X, y = get_feature_vector(df.iloc[index])
+    X = hstack([prev_features, X])
+    print(X.shape)
+    print(y.shape)
+    return X, y
+
+
+get_features_row(training, 20)
+    
