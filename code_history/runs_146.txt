@@ -5715,3 +5715,8 @@ from scipy.sparse import hstack,vstack
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, MinMaxScaler, StandardScaler
 from sklearn import tree
+new run: 1668775959.549758 
+format error: None 
+execution error: name 'X_train' is not defined 
+model = tree.DecisionTreeClassifier()
+model = model.fit(X_train, y_train)
