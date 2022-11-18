@@ -5915,3 +5915,9 @@ execution error: None
 testing_y = testing['DepDel15']
 
 testing_X = testing.drop('DepDel15', axis = 1)
+new run: 1668811897.3538592 
+format error: None 
+execution error: None 
+
+testing_y.to_csv('../archive/testing_y.csv')
+testing.to_csv('../archive/testing_X.csv')
