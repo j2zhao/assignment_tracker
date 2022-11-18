@@ -3780,3 +3780,14 @@ execution error: None
 
 X_train_time = np.zeros((980430 - 20, 2436*2 + 1))
 X_test_time = np.zeros((978592 - 20, 2436*2 + 1))
+new run: 1668737986.1567628 
+format error: None 
+execution error: 'coo_matrix' object is not subscriptable 
+
+temp = np.sum(X_train[0:20], axis = 0)
+print(temp.shape)
+X_train_time[0, 0:2436] = temp
+temp = np.sum(Y_train[0:20], axis = 0)
+print(temp.shape)
+X_train_time[0, 2436] = temp
+X_train_time[0, 2437:] = X_train[0]
