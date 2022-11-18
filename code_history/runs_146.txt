@@ -5441,3 +5441,9 @@ training['ORIGIN_cat'] = data_origin['ORIGIN_cat']
 
 data_origin = origin_df.loc[testing['Origin']].reset_index()
 testing['ORIGIN_cat'] = data_origin['ORIGIN_cat']
+new run: 1668775101.9089448 
+format error: None 
+execution error: 'Series' object has no attribute 'uniques' 
+for key in testing['Origin'].uniques():
+    if key not in origin_df:
+        print(key)
