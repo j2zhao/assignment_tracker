@@ -5256,3 +5256,9 @@ new run: 1668774212.416806
 format error: None 
 execution error: None 
 print(training.keys())
+new run: 1668774256.8413692 
+format error: None 
+execution error: None 
+training = training[['DayOfWeek', 'Airline', 'CRSDepTime', 'Origin', 'Dest', 'Distance', 'ArrDel15']]
+testing = testing[['DayOfWeek', 'Airline', 'CRSDepTime', 'Origin', 'Dest', 'Distance', 'ArrDel15']]
+
