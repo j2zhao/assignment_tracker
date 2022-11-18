@@ -5751,3 +5751,7 @@ new run: 1668776079.62228
 format error: None 
 execution error: None 
 np.argwhere(np.isinf(training_X))
+new run: 1668776101.84058 
+format error: None 
+execution error: None 
+np.argwhere(np.isinf(testing_y))
