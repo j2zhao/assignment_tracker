@@ -4848,3 +4848,26 @@ y_test = []
 
 print(training.shape)
 print(testing.shape)
+new run: 1668739894.409746 
+format error: None 
+execution error:  
+
+for i in range(20, 980430):
+    X, y = get_features_row(training, i)
+    X_train.append(X)
+    y_train.append(y)
+    
+for i in range(20, 978592):
+    X, y = get_features_row(testing, i)
+    X_test.append(X)
+    y_test.append(y)
+
+X_train = vstack(X_train)
+y_train = vstack(y_train)
+X_test = vstack(X_test)
+y_test = vstack(y_test)
+
+pritn(X_train.shape)
+print(y_train.shape)
+print(X_test.shape)
+print(y_test.shape)
