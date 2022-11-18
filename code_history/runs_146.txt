@@ -5641,3 +5641,8 @@ testing_X = model.transform(testing_X)
 model = MinMaxScaler()
 training_X = model.fit_transform(training_X)
 testing_X = model.transform(testing_X)
+new run: 1668775856.403584 
+format error: None 
+execution error: None 
+testing_X = testing.drop('ArrDel15', axis=1)
+testing_y =  testing[['ArrDel15']]
