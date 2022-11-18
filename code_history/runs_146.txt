@@ -5186,3 +5186,8 @@ execution error: 'coo_matrix' object is not subscriptable
 print(X_test.shape)
 X_train = X_train[248:]
 y_train = y_train[248:]
+new run: 1668772940.073118 
+format error: None 
+execution error: None 
+y_test = np.concatenate(y_test, axis = 0)
+y_train = np.concatenate(y_train, axis = 0)
