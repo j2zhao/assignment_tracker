@@ -5704,3 +5704,14 @@ format error: None
 execution error: name 'tree' is not defined 
 model = tree.DecisionTreeClassifier()
 model = model.fit(X_train, y_train)
+new run: 1668775954.481693 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack,vstack
+import numpy as np
+from sklearn.preprocessing import LabelBinarizer, MinMaxScaler, StandardScaler
+from sklearn import tree
