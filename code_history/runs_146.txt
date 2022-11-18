@@ -5217,3 +5217,12 @@ new run: 1668773018.998753
 format error: None 
 execution error: None 
 print(accuracy_score(y_test, y_out))
+new run: 1668773897.5746062 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack,vstack
+import numpy as np
