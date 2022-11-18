@@ -5459,3 +5459,11 @@ execution error: None
 for key in testing['Origin'].unique():
     if key not in origin_df.index:
         print(key)
+new run: 1668775229.98115 
+format error: None 
+execution error: name 'df' is not defined 
+cat = 10
+for key in testing['Origin'].unique():
+    if key not in origin_df.index:
+        df.loc[len(df.index)] = [key, 0, cat]
+        cat += 1
