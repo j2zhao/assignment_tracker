@@ -5545,3 +5545,10 @@ You can drop duplicate edges by setting the 'duplicates' kwarg
 dest_df = training[['Dest','ArrDel15']].groupby('Dest').sum().sort_values(by='ArrDel15',ascending=False)
 dest_df['DEST_cat'] = pd.qcut(dest_df['ArrDel15'], 10, labels = False)
 dest_df
+new run: 1668775415.4925702 
+format error: None 
+execution error: None 
+
+dest_df = training[['Dest','ArrDel15']].groupby('Dest').sum().sort_values(by='ArrDel15',ascending=False)
+dest_df['DEST_cat'] = pd.qcut(dest_df['ArrDel15'], 9, labels = False)
+dest_df
