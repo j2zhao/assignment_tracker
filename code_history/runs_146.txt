@@ -5611,3 +5611,8 @@ format error: None
 execution error: 'numpy.ndarray' object has no attribute 'values' 
 training_X = training_X.values
 training_X = training_X.values
+new run: 1668775636.133726 
+format error: None 
+execution error: 'numpy.ndarray' object has no attribute 'values' 
+training_X = training_X.values
+training_y = training_y.values
