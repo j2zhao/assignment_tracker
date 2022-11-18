@@ -5107,3 +5107,10 @@ format error: None
 execution error: float() argument must be a string or a number, not 'coo_matrix' 
 model = RandomForestClassifier(min_samples_leaf = 100)
 model.fit(X_train, y_train)
+new run: 1668772455.506658 
+format error: None 
+execution error: blocks must be 2-D 
+X_test = vstack(X_test)
+y_test = vstack(y_test)
+X_train = vstack(X_train)
+y_train = vstack(y_train)
