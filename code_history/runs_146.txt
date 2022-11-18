@@ -4895,3 +4895,41 @@ print(X_train.shape)
 print(y_train.shape)
 print(X_test.shape)
 print(y_test.shape)
+new run: 1668739944.087209 
+format error: None 
+execution error: None 
+
+# features: count of previous 20
+not_hot = ['CRSDepTime', 'CRSElapsedTime', 'Distance']
+
+
+
+def get_feature_vector(sub_df, is_scalar = False):
+    array = []
+    for hot in one_hot:
+        x = np.asarray(sub_df[hot]).reshape(-1, 1)
+        x = encoders[hot].transform(x)
+        array.append(x)
+    for col in not_hot:
+        x = np.asarray(sub_df[col]).reshape(-1, 1)
+        array.append(x)
+
+    X_train = hstack(array)
+    y_train = np.asarray(sub_df['DepDel15']).reshape(-1)
+    
+    return X_train, y_train
+
+
+def get_features_row(df, index):
+    prev_rows = get_previous_rows(df, index)
+    prev_X, prev_Y = get_feature_vector(prev_rows)
+    prev_Y = prev_Y.reshape(-1, 1)   
+    prev_features = hstack([prev_X, prev_Y])
+    prev_features = np.sum(prev_features, axis = 0)
+    X, y = get_feature_vector(df.iloc[index], is_scalar = True)
+    X = hstack([prev_features, X])
+    return X, y
+
+
+get_features_row(training, 20)
+    
