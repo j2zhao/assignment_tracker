@@ -5601,3 +5601,8 @@ format error: None
 execution error: "['ARR_DEL15'] not found in axis" 
 training_X = training.drop('ARR_DEL15', axis=1)
 training_y =  training[['ARR_DEL15']]
+new run: 1668775609.040044 
+format error: None 
+execution error: None 
+training_X = training.drop('ArrDel15', axis=1)
+training_y =  training[['ArrDel15']]
