@@ -5755,3 +5755,7 @@ new run: 1668776101.84058
 format error: None 
 execution error: None 
 np.argwhere(np.isinf(testing_y))
+new run: 1668776107.144383 
+format error: None 
+execution error: None 
+np.argwhere(np.isnan(testing_y))
