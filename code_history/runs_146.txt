@@ -3768,3 +3768,9 @@ from pandas.api.types import CategoricalDtype
 from sklearn.preprocessing import OneHotEncoder
 from scipy.sparse import hstack
 import numpy as np
+new run: 1668733177.049809 
+format error: None 
+execution error: None 
+
+X_train_time = np.zeros((980430, 2436*2 + 1))
+X_test_time = np.zeros((978592, 2436*2 + 1))
