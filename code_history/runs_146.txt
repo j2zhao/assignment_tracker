@@ -5735,3 +5735,7 @@ testing_X = model.transform(testing_X)
 model = MinMaxScaler()
 training_X = model.fit_transform(training_X)
 testing_X = model.transform(testing_X)
+new run: 1668776013.843939 
+format error: None 
+execution error: None 
+training_X
