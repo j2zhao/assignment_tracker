@@ -5725,3 +5725,13 @@ format error: None
 execution error: Input contains NaN, infinity or a value too large for dtype('float64'). 
 model = tree.DecisionTreeClassifier()
 model = model.fit(training_X, training_y)
+new run: 1668776000.6170828 
+format error: None 
+execution error: None 
+model = StandardScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
+
+model = MinMaxScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
