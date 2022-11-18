@@ -5908,3 +5908,10 @@ new run: 1668811697.0674272
 format error: None 
 execution error: None 
 testing.keys()
+new run: 1668811753.130752 
+format error: None 
+execution error: None 
+
+testing_y = testing['DepDel15']
+
+testing_X = testing.drop('DepDel15', axis = 1)
