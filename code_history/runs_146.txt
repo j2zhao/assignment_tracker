@@ -5030,3 +5030,8 @@ from pandas.api.types import CategoricalDtype
 from sklearn.preprocessing import OneHotEncoder
 from scipy.sparse import hstack,vstack
 import numpy as np
+new run: 1668753965.296084 
+format error: None 
+execution error: 'list' object has no attribute 'shape' 
+
+print(X_train.shape)
