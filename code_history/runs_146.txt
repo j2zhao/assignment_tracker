@@ -5853,3 +5853,8 @@ new run: 1668777311.3767512
 format error: None 
 execution error: None 
 plot_roc_curve(model, testing_X, testing_y)
+new run: 1668807686.7111208 
+format error: None 
+execution error: None 
+
+training = training.to_csv('../archive/training.csv')
