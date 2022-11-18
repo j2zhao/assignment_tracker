@@ -5552,3 +5552,11 @@ execution error: None
 dest_df = training[['Dest','ArrDel15']].groupby('Dest').sum().sort_values(by='ArrDel15',ascending=False)
 dest_df['DEST_cat'] = pd.qcut(dest_df['ArrDel15'], 9, labels = False)
 dest_df
+new run: 1668775457.3195121 
+format error: None 
+execution error: None 
+cat = 9
+for key in testing['Dest'].unique():
+    if key not in dest_df.index:
+        dest_df.loc[key] = [0, cat]
+dest_df
