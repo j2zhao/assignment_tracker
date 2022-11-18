@@ -5262,3 +5262,11 @@ execution error: None
 training = training[['DayOfWeek', 'Airline', 'CRSDepTime', 'Origin', 'Dest', 'Distance', 'ArrDel15']]
 testing = testing[['DayOfWeek', 'Airline', 'CRSDepTime', 'Origin', 'Dest', 'Distance', 'ArrDel15']]
 
+new run: 1668774290.9399219 
+format error: None 
+execution error: None 
+
+training.dropna()
+training = training.reset_index(drop=True)
+testing.dropna()
+testing = testing.reset_index(drop=True)
