@@ -3759,3 +3759,12 @@ execution error: name 'np' is not defined
 
 X_train_time = np.zeros((980430, 2436*2 + 1))
 X_test_time = np.zeros((978592, 2436*2 + 1))
+new run: 1668733172.094244 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack
+import numpy as np
