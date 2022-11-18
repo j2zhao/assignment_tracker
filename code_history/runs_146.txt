@@ -5290,3 +5290,9 @@ new run: 1668774369.954056
 format error: None 
 execution error: None 
 training['Airline'].nunique()
+new run: 1668774427.940872 
+format error: None 
+execution error: None 
+carrier_df = training[['Airline','ArrDel15']].groupby('Airline').sum().sort_values(by='ArrDel15',ascending=False)
+carrier_df['CARRIER_cat'] = pd.qcut(carrier_df['ArrDel15'], 28, labels = False)
+carrier_df
