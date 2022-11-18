@@ -5319,3 +5319,9 @@ new run: 1668774581.7787242
 format error: None 
 execution error: None 
 training['CRSDepTime'].nunique()
+new run: 1668774629.644945 
+format error: None 
+execution error: 'ARR_DEL15' 
+time_blk_df = training[['CRSDepTime','ArrDel15']].groupby('CRSDepTime').sum().sort_values(by='ArrDel15',ascending=False)
+time_blk_df['TIME_cat'] = pd.qcut(time_blk_df['ARR_DEL15'], 19, labels = False)
+time_blk_df
