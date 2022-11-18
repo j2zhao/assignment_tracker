@@ -5576,3 +5576,8 @@ training['DEST_cat'] = data_dest['DEST_cat']
 
 data_dest = dest_df.loc[testing['Dest']].reset_index()
 testing['DEST_cat'] = data_dest['DEST_cat']
+new run: 1668775525.206631 
+format error: None 
+execution error: "['ON_WEEKEND', 'DISTANCE', 'ARR_DEL15'] not in index" 
+training = training[['ON_WEEKEND', 'CARRIER_cat','DEP_TIME_cat', 'ORIGIN_cat', 'DEST_cat', 'DISTANCE', 'ARR_DEL15']]
+df
