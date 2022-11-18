@@ -5631,3 +5631,13 @@ from sklearn.preprocessing import OneHotEncoder
 from scipy.sparse import hstack,vstack
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, MinMaxScaler, StandardScaler
+new run: 1668775806.859294 
+format error: None 
+execution error: name 'testing_X' is not defined 
+model = StandardScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
+
+model = MinMaxScaler()
+training_X = model.fit_transform(training_X)
+testing_X = model.transform(testing_X)
