@@ -5884,3 +5884,8 @@ execution error: None
 for column in dropped_column:
     training = training.drop(column, axis = 1)
     testing = testing.drop(column, axis = 1)
+new run: 1668808059.021695 
+format error: None 
+execution error: None 
+
+training = training.to_csv('../archive/training.csv')
