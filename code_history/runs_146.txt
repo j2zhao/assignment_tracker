@@ -5270,3 +5270,8 @@ training.dropna()
 training = training.reset_index(drop=True)
 testing.dropna()
 testing = testing.reset_index(drop=True)
+new run: 1668774318.937004 
+format error: None 
+execution error: name 'df' is not defined 
+df = df.rename(columns = {'DayOfWeek' : 'Weekend'})
+df['Weekend'] = (df['Weekend'] > 5).astype(int)
