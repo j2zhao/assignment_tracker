@@ -5341,3 +5341,8 @@ format error: None
 execution error: None 
 data_time = time_blk_df.loc[testing['CRSDepTime']].reset_index()
 testing['DEP_TIME_cat'] = data_time['TIME_cat']
+new run: 1668774737.054392 
+format error: None 
+execution error: name 'df' is not defined 
+
+df['Origin'].nunique()
