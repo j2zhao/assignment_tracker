@@ -5311,3 +5311,7 @@ format error: None
 execution error: None 
 training['CRSDepTime'] = training['CRSDepTime']//100
 testing['CRSDepTime'] = testing['CRSDepTime']//100
+new run: 1668774577.541354 
+format error: None 
+execution error: name 'df' is not defined 
+df['CRSDepTime'].nunique()
