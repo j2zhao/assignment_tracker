@@ -5788,3 +5788,7 @@ new run: 1668776201.135859
 format error: None 
 execution error: None 
 index
+new run: 1668776211.536504 
+format error: None 
+execution error: None 
+index_t = index_t[:, 0]
