@@ -5621,3 +5621,13 @@ format error: None
 execution error: None 
 #training_X = training_X.values
 training_y = training_y.values
+new run: 1668775698.5566342 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack,vstack
+import numpy as np
+from sklearn.preprocessing import LabelBinarizer, MinMaxScaler, StandardScaler
