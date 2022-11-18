@@ -5213,3 +5213,7 @@ y_out = model.predict(X_test)
 matrix = confusion_matrix(y_test, y_out)
 display = ConfusionMatrixDisplay(matrix)
 display.plot()
+new run: 1668773018.998753 
+format error: None 
+execution error: None 
+print(accuracy_score(y_test, y_out))
