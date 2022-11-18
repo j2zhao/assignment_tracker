@@ -4826,3 +4826,14 @@ def get_features_row(df, index):
 
 get_features_row(training, 20)
     
+new run: 1668739724.133445 
+format error: None 
+execution error: None 
+
+X_train_time = []
+y_train_time = []
+X_test_time = []
+y_test_time = []
+
+print(training.shape)
+print(testing.shape)
