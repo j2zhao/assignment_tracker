@@ -5275,3 +5275,10 @@ format error: None
 execution error: name 'df' is not defined 
 df = df.rename(columns = {'DayOfWeek' : 'Weekend'})
 df['Weekend'] = (df['Weekend'] > 5).astype(int)
+new run: 1668774339.361933 
+format error: None 
+execution error: None 
+training = training.rename(columns = {'DayOfWeek' : 'Weekend'})
+training['Weekend'] = (training['Weekend'] > 5).astype(int)
+testing = testing.rename(columns = {'DayOfWeek' : 'Weekend'})
+testing['Weekend'] = (testing['Weekend'] > 5).astype(int)
