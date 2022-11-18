@@ -5306,3 +5306,8 @@ format error: None
 execution error: None 
 data_carrier = carrier_df.loc[testing['Airline']].reset_index()
 testing['CARRIER_cat'] = data_carrier['CARRIER_cat']
+new run: 1668774566.796544 
+format error: None 
+execution error: None 
+training['CRSDepTime'] = training['CRSDepTime']//100
+testing['CRSDepTime'] = testing['CRSDepTime']//100
