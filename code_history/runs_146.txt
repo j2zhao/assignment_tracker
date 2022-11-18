@@ -5180,3 +5180,9 @@ format error: None
 execution error: None 
 print(X_test.shape)
 print(len(y_train))
+new run: 1668772874.3856351 
+format error: None 
+execution error: 'coo_matrix' object is not subscriptable 
+print(X_test.shape)
+X_train = X_train[248:]
+y_train = y_train[248:]
