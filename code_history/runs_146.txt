@@ -3668,3 +3668,8 @@ print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
+new run: 1668733012.420296 
+format error: None 
+execution error: None 
+
+print(testing['DestWac'])
