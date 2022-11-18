@@ -5021,3 +5021,12 @@ y_test = []
 
 print(training.shape)
 print(testing.shape)
+new run: 1668753941.8606389 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack,vstack
+import numpy as np
