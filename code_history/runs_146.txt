@@ -5776,3 +5776,7 @@ new run: 1668776164.3174121
 format error: None 
 execution error: None 
 index
+new run: 1668776174.1101 
+format error: None 
+execution error: None 
+index.shape
