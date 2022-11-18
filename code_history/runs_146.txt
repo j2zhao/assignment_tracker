@@ -5529,3 +5529,10 @@ format error: None
 execution error: None 
 training['Dest'].nunique()
 
+new run: 1668775400.6129012 
+format error: None 
+execution error: name 'df' is not defined 
+
+dest_df = df[['Dest','ArrDel15']].groupby('Dest').sum().sort_values(by='ArrDel15',ascending=False)
+dest_df['DEST_cat'] = pd.qcut(dest_df['ArrDel15'], 10, labels = False)
+dest_df
