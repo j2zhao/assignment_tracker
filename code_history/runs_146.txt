@@ -5301,3 +5301,8 @@ format error: None
 execution error: None 
 data_carrier = carrier_df.loc[training['Airline']].reset_index()
 training['CARRIER_cat'] = data_carrier['CARRIER_cat']
+new run: 1668774507.427636 
+format error: None 
+execution error: None 
+data_carrier = carrier_df.loc[testing['Airline']].reset_index()
+testing['CARRIER_cat'] = data_carrier['CARRIER_cat']
