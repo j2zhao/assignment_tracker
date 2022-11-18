@@ -5669,3 +5669,8 @@ training = training[['Weekend', 'CARRIER_cat','DEP_TIME_cat', 'ORIGIN_cat', 'DES
 testing = testing[['Weekend', 'CARRIER_cat','DEP_TIME_cat', 'ORIGIN_cat', 'DEST_cat', 'Distance', 'ArrDel15']]
 
 training
+new run: 1668775906.49648 
+format error: None 
+execution error: None 
+training_X = training.drop('ArrDel15', axis=1)
+training_y =  training[['ArrDel15']]
