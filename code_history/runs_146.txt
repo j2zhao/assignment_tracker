@@ -5606,3 +5606,8 @@ format error: None
 execution error: None 
 training_X = training.drop('ArrDel15', axis=1)
 training_y =  training[['ArrDel15']]
+new run: 1668775625.8094919 
+format error: None 
+execution error: 'numpy.ndarray' object has no attribute 'values' 
+training_X = training_X.values
+training_X = training_X.values
