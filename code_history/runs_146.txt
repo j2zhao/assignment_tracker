@@ -5040,3 +5040,14 @@ format error: None
 execution error: None 
 
 print(X_train)
+new run: 1668753977.738646 
+format error: None 
+execution error: None 
+
+X_train = []
+y_train = []
+X_test = []
+y_test = []
+
+print(training.shape)
+print(testing.shape)
