@@ -3722,3 +3722,34 @@ import pandas as pd
 from pandas.api.types import CategoricalDtype
 from sklearn.preprocessing import OneHotEncoder
 from scipy.sparse import hstack
+new run: 1668733089.047147 
+format error: None 
+execution error: None 
+
+# features: count of previous 20
+not_hot = ['CRSDepTime', 'CRSElapsedTime', 'Distance']
+
+array = []
+array_test = []
+for hot in one_hot:
+    print(hot)
+    x = encoders[hot].transform(training[hot].to_numpy().reshape(-1, 1))
+    y = encoders[hot].transform(testing[hot].to_numpy().reshape(-1, 1))
+    array.append(x)
+    array_test.append(y)
+
+for col in not_hot:
+    x = training[col].to_numpy().reshape(-1, 1)
+    y = testing[col].to_numpy().reshape(-1, 1)
+    array.append(x)
+    array_test.append(y)
+
+X_train = hstack(array)
+X_test = hstack(array_test)
+y_train = training['DepDel15'].to_numpy().reshape(-1)
+y_test = testing['DepDel15'].to_numpy().reshape(-1)
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
