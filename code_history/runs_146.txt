@@ -5433,3 +5433,11 @@ execution error: None
 origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
 origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 10, labels = False)
 origin_df
+new run: 1668774919.840144 
+format error: None 
+execution error: "['WYS', 'XWA', 'PAE', 'ATY', 'APN', 'BFM', 'PIR', 'AKN'] not in index" 
+data_origin = origin_df.loc[training['Origin']].reset_index()
+training['ORIGIN_cat'] = data_origin['ORIGIN_cat']
+
+data_origin = origin_df.loc[testing['Origin']].reset_index()
+testing['ORIGIN_cat'] = data_origin['ORIGIN_cat']
