@@ -5508,3 +5508,11 @@ execution error: None
 origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
 origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 10, labels = False)
 origin_df
+new run: 1668775315.646463 
+format error: None 
+execution error: None 
+cat = 10
+for key in testing['Origin'].unique():
+    if key not in origin_df.index:
+        origin_df.loc[key] = [0, cat]
+origin_df
