@@ -5739,3 +5739,7 @@ new run: 1668776013.843939
 format error: None 
 execution error: None 
 training_X
+new run: 1668776053.561742 
+format error: None 
+execution error: None 
+np.argwhere(np.isnan(training_X))
