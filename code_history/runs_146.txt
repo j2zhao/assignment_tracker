@@ -5417,3 +5417,13 @@ execution error: None
 origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
 origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 10, labels = False)
 origin_df
+new run: 1668774877.465607 
+format error: None 
+execution error: Bin edges must be unique: array([0.00000000e+00, 0.00000000e+00, 1.00000000e+00, 2.00000000e+00,
+       2.00000000e+00, 4.00000000e+00, 5.00000000e+00, 6.00000000e+00,
+       8.00000000e+00, 1.20000000e+01, 1.70000000e+01, 2.70000000e+01,
+       4.30000000e+01, 8.33333333e+01, 2.40000000e+02, 1.17700000e+03]).
+You can drop duplicate edges by setting the 'duplicates' kwarg 
+origin_df = training[['Origin','ArrDel15']].groupby('Origin').sum().sort_values(by='ArrDel15',ascending=False)
+origin_df['ORIGIN_cat'] = pd.qcut(origin_df['ArrDel15'], 15, labels = False)
+origin_df
