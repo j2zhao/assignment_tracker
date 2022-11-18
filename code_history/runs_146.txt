@@ -5057,3 +5057,9 @@ execution error: None
 
 train = np.random.choice(np.arange(20, 980430), size = 50000, replace=False)
 test =  np.random.choice(np.arange(20, 978592), size = 50000, replace=False)  
+new run: 1668754209.648187 
+format error: None 
+execution error: None 
+
+for i in train:
+    print(i)
