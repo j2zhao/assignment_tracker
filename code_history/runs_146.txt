@@ -5821,3 +5821,15 @@ new run: 1668776357.138745
 format error: None 
 execution error: name 'confusion_matrix' is not defined 
 print(confusion_matrix(testing_y, y_pred_test))
+new run: 1668776395.805055 
+format error: None 
+execution error: None 
+
+import pandas as pd
+from pandas.api.types import CategoricalDtype
+from sklearn.preprocessing import OneHotEncoder
+from scipy.sparse import hstack,vstack
+import numpy as np
+from sklearn.preprocessing import LabelBinarizer, MinMaxScaler, StandardScaler
+from sklearn import tree
+from sklearn.metrics import accuracy_score, ConfusionMatrixDisplay, confusion_matrix, classification_report, plot_roc_curve
