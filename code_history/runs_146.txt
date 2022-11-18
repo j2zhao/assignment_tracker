@@ -5929,3 +5929,7 @@ training = pd.read_csv('../archive/training.csv')
 testing_X = pd.read_csv('../archive/testing_X.csv')
 testing_y = pd.read_csv('../archive/testing_y.csv')
 
+new run: 1668812479.347714 
+format error: None 
+execution error: None 
+training
