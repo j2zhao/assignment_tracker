@@ -5800,3 +5800,7 @@ new run: 1668776275.457602
 format error: None 
 execution error: None 
 training_y = np.delete(training_y, index, axis = 0)
+new run: 1668776304.0272582 
+format error: None 
+execution error: None 
+testing_X = np.delete(testing_X, index_t, axis = 0)
