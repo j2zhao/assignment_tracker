@@ -5568,3 +5568,11 @@ training['DEST_cat'] = data_dest['DEST_cat']
 
 data_dest = dest_df.loc[testing['DEST']].reset_index()
 testing['DEST_cat'] = data_dest['DEST_cat']
+new run: 1668775512.315329 
+format error: None 
+execution error: None 
+data_dest = dest_df.loc[training['Dest']].reset_index()
+training['DEST_cat'] = data_dest['DEST_cat']
+
+data_dest = dest_df.loc[testing['Dest']].reset_index()
+testing['DEST_cat'] = data_dest['DEST_cat']
