@@ -5772,3 +5772,7 @@ format error: None
 execution error: None 
 index_t = np.argwhere(np.isnan(testing_y))
 index = np.argwhere(np.isnan(training_y))
+new run: 1668776164.3174121 
+format error: None 
+execution error: None 
+index
