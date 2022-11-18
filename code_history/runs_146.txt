@@ -5792,3 +5792,7 @@ new run: 1668776211.536504
 format error: None 
 execution error: None 
 index_t = index_t[:, 0]
+new run: 1668776259.54754 
+format error: None 
+execution error: None 
+training_X = np.delete(training_X, index, axis = 0)
