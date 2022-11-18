@@ -5051,3 +5051,9 @@ y_test = []
 
 print(training.shape)
 print(testing.shape)
+new run: 1668754190.5676968 
+format error: None 
+execution error: None 
+
+train = np.random.choice(np.arange(20, 980430), size = 50000, replace=False)
+test =  np.random.choice(np.arange(20, 978592), size = 50000, replace=False)  
