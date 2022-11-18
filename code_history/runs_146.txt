@@ -5679,3 +5679,8 @@ format error: None
 execution error: None 
 testing_X = testing.drop('ArrDel15', axis=1)
 testing_y =  testing[['ArrDel15']]
+new run: 1668775912.1574159 
+format error: None 
+execution error: None 
+training_X = training_X.values
+training_y = training_y.values
