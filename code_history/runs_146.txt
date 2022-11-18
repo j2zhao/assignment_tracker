@@ -5010,3 +5010,14 @@ X_train = vstack(X_train)
 y_train = vstack(y_train)
 X_test = vstack(X_test)
 y_test = vstack(y_test)
+new run: 1668753890.577761 
+format error: None 
+execution error:  
+
+X_train = []
+y_train = []
+X_test = []
+y_test = []
+
+print(training.shape)
+print(testing.shape)
