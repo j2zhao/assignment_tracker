@@ -1,0 +1,7 @@
+new run: 1681489145.036813 
+format error: None 
+execution error: None 
+%load_ext jupyter_record 
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell

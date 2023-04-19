@@ -88,7 +88,7 @@ class AutoCommit(Magics):
         self.update_record(cell, id, result)
         #self.update_id()
         # #committed = add_commit(id + '_start', push = False)
-        add_commit(id + '_end', push=True)
+        # add_commit(id + '_end', push=True)
 
 def load_ipython_extension(ipython):
     """
