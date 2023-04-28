@@ -50,10 +50,13 @@ def update_record(shell, cell, time, result, dire = './code_history'):
     if not os.path.isdir(dire):
         os.mkdir(dire)
     file_dire = get_log_name(dire, shell)
+    ferror = result.error_before_exec.split('\n')[0]
+    eerror = result.error_in_exec.split('\n')[0]
+
     with open(file_dire, 'a') as f:
         f.write('new run: {} \n'.format(time))
-        f.write('format error: {} \n'.format(result.error_before_exec))
-        f.write('execution error: {} \n'.format(result.error_in_exec))
+        f.write('format error: {} \n'.format(ferror))
+        f.write('execution error: {} \n'.format(eerror))
         f.write(cell)
         f.write('\n')
 
