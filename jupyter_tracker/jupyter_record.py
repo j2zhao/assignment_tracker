@@ -46,26 +46,28 @@ def get_log_name(dire, shell):
     file_dire = os.path.join(dire, '{}_log_{}.txt'.format(shell.filename, index))
     return file_dire
 
-def update_record(shell, cell, time, result, dire = './code_history'):
+def update_record(shell, cell, id, result, start, dire = './code_history'):
     if not os.path.isdir(dire):
         os.mkdir(dire)
     file_dire = get_log_name(dire, shell)
-    ferror = result.error_before_exec.split('\n')[0]
-    eerror = result.error_in_exec.split('\n')[0]
-
+    ferror = '\\'.join(str(result.error_before_exec).split('\n'))
+    eerror = '\\'.join(str(result.error_in_exec).split('\n'))
+    
     with open(file_dire, 'a') as f:
-        f.write('new run: {} \n'.format(time))
+        f.write('new run: {} \n'.format(id))
         f.write('format error: {} \n'.format(ferror))
         f.write('execution error: {} \n'.format(eerror))
+        f.write('start: {} \n'.format(start))
         f.write(cell)
         f.write('\n')
 
 
 def log_run(shell, funct):
     def run_cell(raw_cell, **kwargs):
+        start = str(time.time())
         result = funct(raw_cell, **kwargs)
         id = str(time.time())
-        update_record(shell, raw_cell, id, result)
+        update_record(shell, raw_cell, id, result, start)
         return result
     return run_cell
 
