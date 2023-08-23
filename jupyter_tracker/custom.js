@@ -15,22 +15,22 @@ define([
 
 });
 
-document.querySelector('.input').style.display = 'none';
-
 document.body.addEventListener('paste', function(e) {
-    e.preventDefault();
-    alert('Copy function is disabled on this website.');
-  }, true);
+  e.preventDefault();
+  alert('Copy function is disabled on this website.');
+}, true);
 
 document.body.addEventListener('cut', function(e) {
-    e.preventDefault();
-    alert('Cut function is disabled on this website.');
-  }, true);
+  e.preventDefault();
+  alert('Cut function is disabled on this website.');
+}, true);
 
 document.body.addEventListener('copy', function(e) {
-    e.preventDefault();
-    alert('Cut function is disabled on this website.');
-  }, true);
+  e.preventDefault();
+  alert('Cut function is disabled on this website.');
+}, true);
+
+document.querySelector('.input').style.display = 'none';
 
 // document.addEventListener('keydown', function(e) {
 //     if ((e.metaKey || e.ctrlKey) && e.key === 'v') { // 'v' is the key for paste

@@ -531,3 +531,19 @@ start: 1692739640.664271
 %set_filename j2zhao_ml_experiment.ipynb
 # do not change your notebook name
 # do not touch this cell
+new run: 1692760063.2804601 
+format error: None 
+execution error: None 
+start: 1692760063.276049 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692760450.252888 
+format error: None 
+execution error: None 
+start: 1692760450.240553 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
