@@ -56,7 +56,7 @@ def update_record(shell, cell, id, result, start, dire = './code_history'):
     with open(file_dire, 'a') as f:
         f.write('new run: {} \n'.format(id))
         f.write('format error: {} \n'.format(ferror))
-        f.write('execution error: {} \n'.format(eerror))
+        f.write('execution error: {} \n'.format(eerror)) # if execution error is nothing, it is probably a keyboard interupt
         f.write('start: {} \n'.format(start))
         f.write(cell)
         f.write('\n')
