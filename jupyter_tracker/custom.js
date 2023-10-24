@@ -12,14 +12,18 @@ define([
       }
       Jupyter.notebook.execute_cells([0]);
       document.querySelector('.input').style.display = 'none';
+      // Save the notebook every minute
+      setInterval(function() {
+        Jupyter.notebook.save_notebook();
+    }, 60000);  // 60000 milliseconds is equal to 1 minute
   })
 });
 
-function save() {
-  IPython.notebook.save_notebook()
-}
+// function save() {
+//   IPython.notebook.save_notebook()
+// }
 
-setInterval(save, 60000);
+// setInterval(save, 60000);
 
 // document.body.addEventListener('paste', function(e) {
 //   e.preventDefault();
