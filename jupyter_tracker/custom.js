@@ -8,27 +8,33 @@ define([
       if(prev_text.indexOf('%load_ext jupyter_record\n') === -1 ) {
           var cell = IPython.notebook.insert_cell_above('code');
           var notebook_name = Jupyter.notebook.notebook_name;
-          cell.set_text('%load_ext jupyter_record\n%set_filename '+ notebook_name + '\n# do not change your notebook name\n# do not touch this cell');   
+          cell.set_text('%load_ext jupyter_record\n%set_filename '+ notebook_name + '\n%autosave 60\n# do not change your notebook name\n# do not touch this cell');   
       }
       Jupyter.notebook.execute_cells([0]);
+      document.querySelector('.input').style.display = 'none';
   })
-
 });
 
-document.body.addEventListener('paste', function(e) {
-  e.preventDefault();
-  alert('Copy function is disabled on this website.');
-}, true);
+function save() {
+  IPython.notebook.save_notebook()
+}
 
-document.body.addEventListener('cut', function(e) {
-  e.preventDefault();
-  alert('Cut function is disabled on this website.');
-}, true);
+setInterval(save, 60000);
 
-document.body.addEventListener('copy', function(e) {
-  e.preventDefault();
-  alert('Cut function is disabled on this website.');
-}, true);
+// document.body.addEventListener('paste', function(e) {
+//   e.preventDefault();
+//   alert('Copy function is disabled on this website.');
+// }, true);
+
+// document.body.addEventListener('cut', function(e) {
+//   e.preventDefault();
+//   alert('Cut function is disabled on this website.');
+// }, true);
+
+// document.body.addEventListener('copy', function(e) {
+//   e.preventDefault();
+//   alert('Cut function is disabled on this website.');
+// }, true);
 
 document.querySelector('.input').style.display = 'none';
 

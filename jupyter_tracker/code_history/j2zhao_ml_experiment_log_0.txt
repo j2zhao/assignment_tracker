@@ -547,3 +547,204 @@ start: 1692760450.240553
 %set_filename j2zhao_ml_experiment.ipynb
 # do not change your notebook name
 # do not touch this cell
+new run: 1692773011.236234 
+format error: None 
+execution error: None 
+start: 1692773011.224033 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692773713.322635 
+format error: None 
+execution error: None 
+start: 1692773713.3211489 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692777997.525151 
+format error: None 
+execution error: None 
+start: 1692777997.5144398 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692804259.600415 
+format error: None 
+execution error: None 
+start: 1692804259.5883121 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692805076.098437 
+format error: None 
+execution error: None 
+start: 1692805076.090998 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692806332.66648 
+format error: None 
+execution error: None 
+start: 1692806332.665536 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692817589.018317 
+format error: None 
+execution error: None 
+start: 1692817589.010109 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692818901.329348 
+format error: None 
+execution error: None 
+start: 1692818901.3240168 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692831056.3529742 
+format error: None 
+execution error: None 
+start: 1692831056.3403862 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692834815.514018 
+format error: None 
+execution error: None 
+start: 1692834815.512704 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692837374.8180249 
+format error: None 
+execution error: None 
+start: 1692837374.8112252 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1692838544.265384 
+format error: None 
+execution error: None 
+start: 1692838544.2591949 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698107931.559216 
+format error: None 
+execution error: None 
+start: 1698107931.5550451 
+%autosave 60
+new run: 1698107943.6587362 
+format error: None 
+execution error: None 
+start: 1698107943.6565561 
+%autosave 10
+new run: 1698108037.8603132 
+format error: None 
+execution error: None 
+start: 1698108037.8579772 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698108049.4471161 
+format error: None 
+execution error: None 
+start: 1698108049.44577 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698108310.142377 
+format error: None 
+execution error: None 
+start: 1698108310.1409862 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698108328.2289212 
+format error: None 
+execution error: None 
+start: 1698108328.227006 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698108571.892289 
+format error: None 
+execution error: None 
+start: 1698108571.8887749 
+%%javascript
+Jupyter.notebook.set_autosave_interval(60000)
+new run: 1698108615.75723 
+format error: None 
+execution error: None 
+start: 1698108615.754234 
+%%javascript
+Jupyter.notebook.set_autosave_interval(60000)
+new run: 1698108629.073708 
+format error: None 
+execution error: None 
+start: 1698108629.071604 
+x = 1
+x
+new run: 1698108665.418504 
+format error: None 
+execution error: None 
+start: 1698108665.412454 
+%%javascript
+IPython.notebook.save_notebook()
+new run: 1698108670.079585 
+format error: None 
+execution error: None 
+start: 1698108670.075886 
+%%javascript
+IPython.notebook.save_notebook()
+new run: 1698108973.4628139 
+format error: None 
+execution error: None 
+start: 1698108973.462378 
+x = 1
+print(x)
+new run: 1698109015.9433532 
+format error: None 
+execution error: None 
+start: 1698109015.941936 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698109247.381357 
+format error: None 
+execution error: None 
+start: 1698109247.380045 
+%load_ext jupyter_record
+%set_filename j2zhao_ml_experiment.ipynb
+# do not change your notebook name
+# do not touch this cell
+new run: 1698109302.676686 
+format error: None 
+execution error: None 
+start: 1698109302.676168 
+print(1)
+new run: 1698109347.155138 
+format error: None 
+execution error: None 
+start: 1698109347.148532 
+%%javascript
+IPython.notebook.save_notebook()
